@@ -3,7 +3,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>충전 시간 계산기</title>
+  <title>Charge Time Calculator</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -110,14 +110,14 @@
 
 </head>
 <body>
-  <img src="logo.jpg" alt="로고">
-  <h2>⏱️ 충전 시간 계산기</h2>
+  <img src="logo.jpg" alt="Logo">
+  <h2>⏱️ Charge Time Calculator</h2>
 
-  <label>커패시터 용량 (F):<br><input type="number" id="cap" /></label>
-  <label>전압 변화 (V):<br><input type="number" id="dv" /></label>
-  <label>충전 전류 (mA):<br><input type="number" id="current" /></label>
+  <label>Capacitance (F) (F):<br><input type="number" id="cap" /></label>
+  <label>Voltage Difference (V) (V):<br><input type="number" id="dv" /></label>
+  <label>Charge Current (mA) (mA):<br><input type="number" id="current" /></label>
 
-  <button onclick="calculate()">계산하기</button>
+  <button onclick="calculate()">Calculate</button>
 
   <div id="result"></div>
 
@@ -135,7 +135,7 @@
       const t = (C * dV) / I;
 
       document.getElementById('result').innerHTML = `
-        ⏱️ 예상 충전 시간: <strong>${t.toFixed(2)} 초</strong>
+        ⏱️ Estimated Charge Time: <strong>${t.toFixed(2)} 초</strong>
       `;
     }
   </script>

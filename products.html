@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>제품 리스트</title>
+  <title>Product List</title>
 <style>
   body {
     font-family: 'Segoe UI', sans-serif;
@@ -164,17 +164,17 @@
 <body>
 
   <div style="text-align:center; margin-bottom: 10px;">
-  <img src="logo.jpg" alt="로고" style="height: 60px;">
+  <img src="logo.jpg" alt="Logo" style="height: 60px;">
 </div>
 
   <div style="text-align:center; margin-bottom: 20px;">
-  <a href="index.html" style="margin-right: 20px;">📦 제품 리스트</a>
-  <a href="calculators.html">🧮 계산기 센터</a>
+  <a href="index.html" style="margin-right: 20px;">📦 Product List</a>
+  <a href="calculators.html">🧮 Capacitor Calculators</a>
 </div>
   <div style="text-align:center; margin-bottom: 20px;" id="category-filter">
 </div>
 
-  <h1>제품 리스트</h1>
+  <h1>Product List</h1>
 
 <input type="text" id="search" placeholder="제품명을 입력하세요" style="padding: 10px; width: 300px; font-size: 16px; margin-bottom: 20px;">
 
@@ -216,7 +216,7 @@
     list.innerHTML = '';
 
     if (products.length === 0) {
-      list.innerHTML = '<p style="text-align:center; color:#888;">일치하는 제품이 없습니다.</p>';
+      list.innerHTML = '<p style="text-align:center; color:#888;">No matching products found.</p>';
       return;
     }
 
