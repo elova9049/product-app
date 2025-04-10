@@ -1,61 +1,50 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>Discharge Time Calculator</title>
+  <title>방전 시간 계산기</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      color: #333;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
     }
 
-    img {
-      height: 60px;
-      margin-bottom: 30px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    h1, h2 {
+    h2 {
       text-align: center;
-      margin-bottom: 10px;
-    }
-
-    .menu a, button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px 5px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover, .menu a:hover {
-      background-color: #0056b3;
+      color: #333;
     }
 
     label {
       display: block;
-      margin-top: 12px;
+      margin: 12px 0;
       font-size: 16px;
     }
 
     input {
-      width: 100%;
       padding: 8px;
-      margin-top: 4px;
       font-size: 14px;
+      width: 100%;
       box-sizing: border-box;
+      margin-top: 4px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
     }
 
     #result {
@@ -66,15 +55,14 @@
   </style>
 </head>
 <body>
-  <img src="logo.jpg" alt="Logo">
-  <h2>🔄 Discharge Time Calculator</h2>
+  <h2>🔄 방전 시간 계산기</h2>
 
-  <label>Capacitance (F):<br><input type="number" id="cap" /></label>
-  <label>Max Voltage (V):<br><input type="number" id="v1" /></label>
-  <label>Min Voltage (V):<br><input type="number" id="v2" /></label>
-  <label>Discharge Current (mA):<br><input type="number" id="current" /></label>
+  <label>커패시터 용량 (F):<br><input type="number" id="cap" /></label>
+  <label>최대 전압 (V):<br><input type="number" id="v1" /></label>
+  <label>최소 전압 (V):<br><input type="number" id="v2" /></label>
+  <label>소비 전류 (mA):<br><input type="number" id="current" /></label>
 
-  <button onclick="calculate()">Calculate</button>
+  <button onclick="calculate()">계산하기</button>
 
   <div id="result"></div>
 
@@ -86,19 +74,19 @@
       const I = parseFloat(document.getElementById('current').value) / 1000;
 
       if (V1 <= V2) {
-        document.getElementById('result').innerHTML = "⚠️ Max Voltage must be greater than Min Voltage.";
+        document.getElementById('result').innerHTML = "⚠️ 최대 전압은 최소 전압보다 커야 합니다.";
         return;
       }
 
       if (I <= 0) {
-        document.getElementById('result').innerHTML = "⚠️ Current must be greater than 0.";
+        document.getElementById('result').innerHTML = "⚠️ 전류는 0보다 커야 합니다.";
         return;
       }
 
       const t = (C * (V1*V1 - V2*V2)) / (2 * I);
 
       document.getElementById('result').innerHTML = `
-        🔋 Estimated Discharge Time: <strong>${t.toFixed(2)} seconds</strong>
+        🔋 예상 방전 시간: <strong>${t.toFixed(2)} 초</strong>
       `;
     }
   </script>
