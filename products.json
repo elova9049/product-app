@@ -2,15 +2,15 @@
   {
     "name": "ABC-123",
     "description": "고온 대응, 소형 패키지",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Anonymous_emblem.svg/200px-Anonymous_emblem.svg.png",
-    "datasheet": "https://example.com/ABC-123-datasheet.pdf"
-    "category": "DR SERIES"
+    "image": "logo.jpg",
+    "datasheet": "https://example.com/ABC-123.pdf",
+    "category": "DC SERIES"
   },
   {
     "name": "XYZ-789",
-    "description": "저전력, 고신뢰성",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Anonymous_emblem.svg/200px-Anonymous_emblem.svg.png",
-    "datasheet": "https://example.com/XYZ-789-datasheet.pdf"
-    "category": "DC SERIES"
+    "description": "고신뢰성, 저전력",
+    "image": "logo.jpg",
+    "datasheet": "https://example.com/XYZ-789.pdf",
+    "category": "DR SERIES"
   }
 ]
