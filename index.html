@@ -117,6 +117,7 @@
     .then(response => response.json())
     .then(products => {
       allProducts = products;
+      renderCategoryButtons(products); // 카테고리 버튼 생성
       applyFilters(); // 초기 렌더링
     });
 
