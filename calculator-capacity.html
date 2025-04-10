@@ -113,10 +113,10 @@
   <img src="logo.jpg" alt="Logo">
   <h2>🔋 Capacitance Calculator</h2>
 
-  <label>Discharge Current (mA) (mA):<br><input type="number" id="current" /></label>
-  <label>Operation Time (s) (초):<br><input type="number" id="time" /></label>
-  <label>Max Voltage (V) (V):<br><input type="number" id="v1" /></label>
-  <label>Min Voltage (V) (V):<br><input type="number" id="v2" /></label>
+  <label>Discharge Current (mA) :<br><input type="number" id="current" /></label>
+  <label>Operation Time (s) :<br><input type="number" id="time" /></label>
+  <label>Max Voltage (V) :<br><input type="number" id="v1" /></label>
+  <label>Min Voltage (V) :<br><input type="number" id="v2" /></label>
 
   <button onclick="calculate()">Calculate</button>
 
@@ -140,7 +140,7 @@
 
       document.getElementById('result').innerHTML = `
         ✔️ Minimum Required Capacitance: <strong>${C_mF.toFixed(2)} mF</strong><br>
-        💡 Recommended Capacitance (with 30% margin) (30% 여유): <strong>${C_rec.toFixed(2)} mF</strong>
+        💡 Recommended Capacitance (with 30% margin) : <strong>${C_rec.toFixed(2)} mF</strong>
       `;
     }
   </script>
