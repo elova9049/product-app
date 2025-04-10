@@ -5,5 +5,880 @@
     "image": "logo.jpg",
     "datasheet": "",
     "category": "DC SERIES"
+  },
+  {
+    "name": "DCM5R5104",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.1F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCM5R5224",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.22F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCMT3R6473",
+    "description": "Voltage: 3.6V\\nCapacitance: 0.047F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCMT3R6104",
+    "description": "Voltage: 3.6V\\nCapacitance: 0.1F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCMT3R6224",
+    "description": "Voltage: 3.6V\\nCapacitance: 0.22F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCS5R5473",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.047F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCS5R5104",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.1F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCS5R5224",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.22F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCS5R5334",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.33F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCS5R5474",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.47F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST3R6473",
+    "description": "Voltage: 3.6V\\nCapacitance: 0.047F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST3R6104",
+    "description": "Voltage: 3.6V\\nCapacitance: 0.1F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST3R6224",
+    "description": "Voltage: 3.6V\\nCapacitance: 0.22F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST3R6334",
+    "description": "Voltage: 3.6V\\nCapacitance: 0.33F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST3R6474",
+    "description": "Voltage: 3.6V\\nCapacitance: 0.47F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST5R5104",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.1F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST5R5224",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.22F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST5R5334",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.33F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSH6R3104",
+    "description": "Voltage: 6.3V\\nCapacitance: 0.1F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSH6R3224",
+    "description": "Voltage: 6.3V\\nCapacitance: 0.22F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSH6R3334",
+    "description": "Voltage: 6.3V\\nCapacitance: 0.33F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSP5R5473",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.47F\\nTemperature: -40 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSP5R5104",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.1F\\nTemperature: -40 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSP5R5224",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.22F\\nTemperature: -40 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSP5R5334",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.33F\\nTemperature: -40 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSP5R5474",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.47F\\nTemperature: -40 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCL5R5105",
+    "description": "Voltage: 5.5V\\nCapacitance: 1.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCL5R5155",
+    "description": "Voltage: 5.5V\\nCapacitance: 1.5F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLT3R6105",
+    "description": "Voltage: 3.6V\\nCapacitance: 1.0F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLT3R6155",
+    "description": "Voltage: 3.6V\\nCapacitance: 1.5F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLT5R5474",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.47F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLT5R5684",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.68F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLT5R5105",
+    "description": "Voltage: 5.5V\\nCapacitance: 1.0F\\nTemperature: -25 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLH6R3474",
+    "description": "Voltage: 6.3V\\nCapacitance: 0.47F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLH6R3684",
+    "description": "Voltage: 6.3V\\nCapacitance: 0.68F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLH6R3105",
+    "description": "Voltage: 6.3V\\nCapacitance: 1.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "SM3R3333",
+    "description": "Voltage: 3.3V\\nCapacitance: 0.033F\\nTemperature: -10 to +60°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "SM SERIES"
+  },
+  {
+    "name": "SM3R3703",
+    "description": "Voltage: 3.3V\\nCapacitance: 0.07F\\nTemperature: -10 to +60°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "SM SERIES"
+  },
+  {
+    "name": "DMS3R3224RS",
+    "description": "Voltage: 3.3V\\nCapacitance: 0.22F\\nTemperature: -10 to +60°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DMS SERIES"
+  },
+  {
+    "name": "DMS3R3224RF",
+    "description": "Voltage: 3.3V\\nCapacitance: 0.22F\\nTemperature: -10 to +60°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DMS SERIES"
+  },
+  {
+    "name": "DCSR5R5224",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.22F\\nTemperature: -40 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR5R5334",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.33F\\nTemperature: -40 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR5R5474",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.47F\\nTemperature: -40 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR3R6224T",
+    "description": "Voltage: 3.6V\\nCapacitance: 0.22F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR3R6334T",
+    "description": "Voltage: 3.6V\\nCapacitance: 0.33F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR3R6474T",
+    "description": "Voltage: 3.6V\\nCapacitance: 0.47F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR5R5224T",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.22F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR5R5334T",
+    "description": "Voltage: 5.5V\\nCapacitance: 0.33F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DR2R5105R",
+    "description": "Voltage: 2.5V\\nCapacitance: 1.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5305R",
+    "description": "Voltage: 2.5V\\nCapacitance: 3.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5505R",
+    "description": "Voltage: 2.5V\\nCapacitance: 5.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5505S",
+    "description": "Voltage: 2.5V\\nCapacitance: 5.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5705L",
+    "description": "Voltage: 2.5V\\nCapacitance: 7.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5705R",
+    "description": "Voltage: 2.5V\\nCapacitance: 7.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5705D",
+    "description": "Voltage: 2.5V\\nCapacitance: 7.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5106R",
+    "description": "Voltage: 2.5V\\nCapacitance: 10.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5106RX",
+    "description": "Voltage: 2.5V\\nCapacitance: 10.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5106S",
+    "description": "Voltage: 2.5V\\nCapacitance: 10.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5156R",
+    "description": "Voltage: 2.5V\\nCapacitance: 15.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5256R",
+    "description": "Voltage: 2.5V\\nCapacitance: 25.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5356R",
+    "description": "Voltage: 2.5V\\nCapacitance: 35.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5506R",
+    "description": "Voltage: 2.5V\\nCapacitance: 50.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7105R",
+    "description": "Voltage: 2.7V\\nCapacitance: 1.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7305R",
+    "description": "Voltage: 2.7V\\nCapacitance: 3.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7505R",
+    "description": "Voltage: 2.7V\\nCapacitance: 5.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7505S",
+    "description": "Voltage: 2.7V\\nCapacitance: 5.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7705L",
+    "description": "Voltage: 2.7V\\nCapacitance: 7.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7705R",
+    "description": "Voltage: 2.7V\\nCapacitance: 7.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7705D",
+    "description": "Voltage: 2.7V\\nCapacitance: 7.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7106R",
+    "description": "Voltage: 2.7V\\nCapacitance: 10.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7106RX",
+    "description": "Voltage: 2.7V\\nCapacitance: 10.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7106S",
+    "description": "Voltage: 2.7V\\nCapacitance: 10.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7156R",
+    "description": "Voltage: 2.7V\\nCapacitance: 15.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7256R",
+    "description": "Voltage: 2.7V\\nCapacitance: 25.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7356R",
+    "description": "Voltage: 2.7V\\nCapacitance: 35.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7506R",
+    "description": "Voltage: 2.7V\\nCapacitance: 50.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7706R",
+    "description": "Voltage: 2.7V\\nCapacitance: 70.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR3R0105",
+    "description": "Voltage: 3V\\nCapacitance: 1.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR3R0305",
+    "description": "Voltage: 3V\\nCapacitance: 3.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR3R0505",
+    "description": "Voltage: 3V\\nCapacitance: 5.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR3R0705",
+    "description": "Voltage: 3V\\nCapacitance: 7.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR3R0106",
+    "description": "Voltage: 3V\\nCapacitance: 10.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR3R0156",
+    "description": "Voltage: 3V\\nCapacitance: 15.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRL2R3106",
+    "description": "Voltage: 2.3V\\nCapacitance: 10.0F\\nTemperature: -25 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRL2R3226",
+    "description": "Voltage: 2.3V\\nCapacitance: 22.0F\\nTemperature: -25 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRL2R3306",
+    "description": "Voltage: 2.3V\\nCapacitance: 30.0F\\nTemperature: -25 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRL2R3506",
+    "description": "Voltage: 2.3V\\nCapacitance: 50.0F\\nTemperature: -25 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRL2R3706",
+    "description": "Voltage: 2.3V\\nCapacitance: 70.0F\\nTemperature: -25 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRL2R3127",
+    "description": "Voltage: 2.3V\\nCapacitance: 120.0F\\nTemperature: -25 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5105",
+    "description": "Voltage: 2.5V\\nCapacitance: 1.0F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5305",
+    "description": "Voltage: 2.5V\\nCapacitance: 3.0F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5505",
+    "description": "Voltage: 2.5V\\nCapacitance: 5.0F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5705",
+    "description": "Voltage: 2.5V\\nCapacitance: 7.0F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5106",
+    "description": "Voltage: 2.5V\\nCapacitance: 10.0F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5156",
+    "description": "Voltage: 2.5V\\nCapacitance: 15.0F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5226",
+    "description": "Voltage: 2.5V\\nCapacitance: 22.0F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5336",
+    "description": "Voltage: 2.5V\\nCapacitance: 33.0F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5506",
+    "description": "Voltage: 2.5V\\nCapacitance: 50.0F\\nTemperature: -40 to +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5155",
+    "description": "Voltage: 2.5V\\nCapacitance: 1.5F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5205",
+    "description": "Voltage: 2.5V\\nCapacitance: 2.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5305",
+    "description": "Voltage: 2.5V\\nCapacitance: 3.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5405",
+    "description": "Voltage: 2.5V\\nCapacitance: 4.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5555",
+    "description": "Voltage: 2.5V\\nCapacitance: 5.5F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5805",
+    "description": "Voltage: 2.5V\\nCapacitance: 8.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5156",
+    "description": "Voltage: 2.5V\\nCapacitance: 15.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5206",
+    "description": "Voltage: 2.5V\\nCapacitance: 20.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5306",
+    "description": "Voltage: 2.5V\\nCapacitance: 30.0F\\nTemperature: -25 to +70°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7155",
+    "description": "Voltage: 2.7V\\nCapacitance: 1.5F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7205",
+    "description": "Voltage: 2.7V\\nCapacitance: 2.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7305",
+    "description": "Voltage: 2.7V\\nCapacitance: 3.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7405",
+    "description": "Voltage: 2.7V\\nCapacitance: 4.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7555",
+    "description": "Voltage: 2.7V\\nCapacitance: 5.5F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7805",
+    "description": "Voltage: 2.7V\\nCapacitance: 8.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7156",
+    "description": "Voltage: 2.7V\\nCapacitance: 15.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7206",
+    "description": "Voltage: 2.7V\\nCapacitance: 20.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7306",
+    "description": "Voltage: 2.7V\\nCapacitance: 30.0F\\nTemperature: -40 to +65°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7105",
+    "description": "Voltage: 2.7(70℃) / 2.3(85℃)V\\nCapacitance: 1.0F\\nTemperature: -40 to +70 / +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7305",
+    "description": "Voltage: 2.7(70℃) / 2.3(85℃)V\\nCapacitance: 3.0F\\nTemperature: -40 to +70 / +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7505",
+    "description": "Voltage: 2.7(70℃) / 2.3(85℃)V\\nCapacitance: 5.0F\\nTemperature: -40 to +70 / +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7705",
+    "description": "Voltage: 2.7(70℃) / 2.3(85℃)V\\nCapacitance: 7.0F\\nTemperature: -40 to +70 / +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7106",
+    "description": "Voltage: 2.7(70℃) / 2.3(85℃)V\\nCapacitance: 10.0F\\nTemperature: -40 to +70 / +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7156",
+    "description": "Voltage: 2.7(70℃) / 2.3(85℃)V\\nCapacitance: 15.0F\\nTemperature: -40 to +70 / +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7226",
+    "description": "Voltage: 2.7(70℃) / 2.3(85℃)V\\nCapacitance: 22.0F\\nTemperature: -40 to +70 / +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7336",
+    "description": "Voltage: 2.7(70℃) / 2.3(85℃)V\\nCapacitance: 33.0F\\nTemperature: -40 to +70 / +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7506",
+    "description": "Voltage: 2.7(70℃) / 2.3(85℃)V\\nCapacitance: 50.0F\\nTemperature: -40 to +70 / +85°C",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
   }
 ]
