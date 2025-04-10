@@ -29,34 +29,52 @@
     }
 
     .menu {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
     .menu a {
-      display: block;
-      padding: 15px 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 10px;
       background-color: #007BFF;
       color: white;
       border-radius: 8px;
       text-decoration: none;
       font-size: 16px;
-      text-align: center;
-      transition: background-color 0.2s ease;
     }
 
     .menu a:hover {
       background-color: #0056b3;
     }
+
+    .list a {
+      display: block;
+      padding: 14px;
+      margin-bottom: 10px;
+      background-color: #f5f7fa;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      color: #007BFF;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .list a:hover {
+      background-color: #eaf2ff;
+    }
   </style>
 </head>
 <body>
   <img src="logo.jpg" alt="Logo">
-  <h1>🔧 Capacitor Calculators</h1>
+
   <div class="menu">
     <a href="index.html">🧰 Main Page</a>
     <a href="products.html">📦 Product List</a>
+  </div>
+
+  <h1>🔧 Capacitor Calculators</h1>
+  <div class="list">
     <a href="calculator-capacity.html">🔋 Capacitance Calculator</a>
     <a href="calculator-charge.html">⏱️ Charge Time Calculator</a>
     <a href="calculator-discharge.html">🔄 Discharge Time Calculator</a>
