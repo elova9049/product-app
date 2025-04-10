@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>충전 시간 계산기</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin: 12px 0;
+      font-size: 16px;
+    }
+
+    input {
+      padding: 8px;
+      font-size: 14px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 4px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #result {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <h2>⏱️ 충전 시간 계산기</h2>
+
+  <label>커패시터 용량 (F):<br><input type="number" id="cap" /></label>
+  <label>전압 변화 (V):<br><input type="number" id="dv" /></label>
+  <label>충전 전류 (mA):<br><input type="number" id="current" /></label>
+
+  <button onclick="calculate()">계산하기</button>
+
+  <div id="result"></div>
+
+  <script>
+    function calculate() {
+      const C = parseFloat(document.getElementById('cap').value);
+      const dV = parseFloat(document.getElementById('dv').value);
+      const I = parseFloat(document.getElementById('current').value) / 1000;
+
+      if (I <= 0) {
+        document.getElementById('result').innerHTML = "⚠️ 전류는 0보다 커야 합니다.";
+        return;
+      }
+
+      const t = (C * dV) / I;
+
+      document.getElementById('result').innerHTML = `
+        ⏱️ 예상 충전 시간: <strong>${t.toFixed(2)} 초</strong>
+      `;
+    }
+  </script>
+</body>
+</html>
