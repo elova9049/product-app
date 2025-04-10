@@ -1,16 +1,884 @@
 [
   {
-    "name": "ABC-123",
-    "description": "고온 대응, 소형 패키지",
+    "name": "DCM5R5473",
+    "description": "전압: 5.5V\n용량: 0.047F\n온도: -25 to +70",
     "image": "logo.jpg",
-    "datasheet": "https://example.com/ABC-123.pdf",
+    "datasheet": "",
     "category": "DC SERIES"
   },
   {
-    "name": "XYZ-789",
-    "description": "고신뢰성, 저전력",
+    "name": "DCM5R5104",
+    "description": "전압: 5.5V\n용량: 0.1F\n온도: -25 to +70",
     "image": "logo.jpg",
-    "datasheet": "https://example.com/XYZ-789.pdf",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCM5R5224",
+    "description": "전압: 5.5V\n용량: 0.22F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCMT3R6473",
+    "description": "전압: 3.6V\n용량: 0.047F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCMT3R6104",
+    "description": "전압: 3.6V\n용량: 0.1F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCMT3R6224",
+    "description": "전압: 3.6V\n용량: 0.22F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCS5R5473",
+    "description": "전압: 5.5V\n용량: 0.047F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCS5R5104",
+    "description": "전압: 5.5V\n용량: 0.1F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCS5R5224",
+    "description": "전압: 5.5V\n용량: 0.22F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCS5R5334",
+    "description": "전압: 5.5V\n용량: 0.33F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCS5R5474",
+    "description": "전압: 5.5V\n용량: 0.47F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST3R6473",
+    "description": "전압: 3.6V\n용량: 0.047F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST3R6104",
+    "description": "전압: 3.6V\n용량: 0.1F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST3R6224",
+    "description": "전압: 3.6V\n용량: 0.22F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST3R6334",
+    "description": "전압: 3.6V\n용량: 0.33F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST3R6474",
+    "description": "전압: 3.6V\n용량: 0.47F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST5R5104",
+    "description": "전압: 5.5V\n용량: 0.1F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST5R5224",
+    "description": "전압: 5.5V\n용량: 0.22F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCST5R5334",
+    "description": "전압: 5.5V\n용량: 0.33F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSH6R3104",
+    "description": "전압: 6.3V\n용량: 0.1F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSH6R3224",
+    "description": "전압: 6.3V\n용량: 0.22F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSH6R3334",
+    "description": "전압: 6.3V\n용량: 0.33F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSP5R5473",
+    "description": "전압: 5.5V\n용량: 0.47F\n온도: -40 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSP5R5104",
+    "description": "전압: 5.5V\n용량: 0.1F\n온도: -40 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSP5R5224",
+    "description": "전압: 5.5V\n용량: 0.22F\n온도: -40 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSP5R5334",
+    "description": "전압: 5.5V\n용량: 0.33F\n온도: -40 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSP5R5474",
+    "description": "전압: 5.5V\n용량: 0.47F\n온도: -40 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCL5R5105",
+    "description": "전압: 5.5V\n용량: 1.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCL5R5155",
+    "description": "전압: 5.5V\n용량: 1.5F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLT3R6105",
+    "description": "전압: 3.6V\n용량: 1.0F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLT3R6155",
+    "description": "전압: 3.6V\n용량: 1.5F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLT5R5474",
+    "description": "전압: 5.5V\n용량: 0.47F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLT5R5684",
+    "description": "전압: 5.5V\n용량: 0.68F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLT5R5105",
+    "description": "전압: 5.5V\n용량: 1.0F\n온도: -25 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLH6R3474",
+    "description": "전압: 6.3V\n용량: 0.47F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLH6R3684",
+    "description": "전압: 6.3V\n용량: 0.68F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCLH6R3105",
+    "description": "전압: 6.3V\n용량: 1.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "SM3R3333",
+    "description": "전압: 3.3V\n용량: 0.033F\n온도: -10 to +60",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "SM SERIES"
+  },
+  {
+    "name": "SM3R3703",
+    "description": "전압: 3.3V\n용량: 0.07F\n온도: -10 to +60",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "SM SERIES"
+  },
+  {
+    "name": "DMS3R3224RS",
+    "description": "전압: 3.3V\n용량: 0.22F\n온도: -10 to +60",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DMS SERIES"
+  },
+  {
+    "name": "DMS3R3224RF",
+    "description": "전압: 3.3V\n용량: 0.22F\n온도: -10 to +60",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DMS SERIES"
+  },
+  {
+    "name": "DCSR5R5224",
+    "description": "전압: 5.5V\n용량: 0.22F\n온도: -40 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR5R5334",
+    "description": "전압: 5.5V\n용량: 0.33F\n온도: -40 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR5R5474",
+    "description": "전압: 5.5V\n용량: 0.47F\n온도: -40 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR3R6224T",
+    "description": "전압: 3.6V\n용량: 0.22F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR3R6334T",
+    "description": "전압: 3.6V\n용량: 0.33F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR3R6474T",
+    "description": "전압: 3.6V\n용량: 0.47F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR5R5224T",
+    "description": "전압: 5.5V\n용량: 0.22F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DCSR5R5334T",
+    "description": "전압: 5.5V\n용량: 0.33F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DC SERIES"
+  },
+  {
+    "name": "DR2R5105R",
+    "description": "전압: 2.5V\n용량: 1.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5305R",
+    "description": "전압: 2.5V\n용량: 3.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5505R",
+    "description": "전압: 2.5V\n용량: 5.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5505S",
+    "description": "전압: 2.5V\n용량: 5.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5705L",
+    "description": "전압: 2.5V\n용량: 7.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5705R",
+    "description": "전압: 2.5V\n용량: 7.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5705D",
+    "description": "전압: 2.5V\n용량: 7.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5106R",
+    "description": "전압: 2.5V\n용량: 10.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5106RX",
+    "description": "전압: 2.5V\n용량: 10.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5106S",
+    "description": "전압: 2.5V\n용량: 10.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5156R",
+    "description": "전압: 2.5V\n용량: 15.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5256R",
+    "description": "전압: 2.5V\n용량: 25.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5356R",
+    "description": "전압: 2.5V\n용량: 35.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R5506R",
+    "description": "전압: 2.5V\n용량: 50.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7105R",
+    "description": "전압: 2.7V\n용량: 1.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7305R",
+    "description": "전압: 2.7V\n용량: 3.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7505R",
+    "description": "전압: 2.7V\n용량: 5.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7505S",
+    "description": "전압: 2.7V\n용량: 5.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7705L",
+    "description": "전압: 2.7V\n용량: 7.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7705R",
+    "description": "전압: 2.7V\n용량: 7.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7705D",
+    "description": "전압: 2.7V\n용량: 7.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7106R",
+    "description": "전압: 2.7V\n용량: 10.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7106RX",
+    "description": "전압: 2.7V\n용량: 10.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7106S",
+    "description": "전압: 2.7V\n용량: 10.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7156R",
+    "description": "전압: 2.7V\n용량: 15.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7256R",
+    "description": "전압: 2.7V\n용량: 25.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7356R",
+    "description": "전압: 2.7V\n용량: 35.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7506R",
+    "description": "전압: 2.7V\n용량: 50.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR2R7706R",
+    "description": "전압: 2.7V\n용량: 70.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR3R0105",
+    "description": "전압: 3V\n용량: 1.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR3R0305",
+    "description": "전압: 3V\n용량: 3.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR3R0505",
+    "description": "전압: 3V\n용량: 5.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR3R0705",
+    "description": "전압: 3V\n용량: 7.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR3R0106",
+    "description": "전압: 3V\n용량: 10.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DR3R0156",
+    "description": "전압: 3V\n용량: 15.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRL2R3106",
+    "description": "전압: 2.3V\n용량: 10.0F\n온도: -25 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRL2R3226",
+    "description": "전압: 2.3V\n용량: 22.0F\n온도: -25 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRL2R3306",
+    "description": "전압: 2.3V\n용량: 30.0F\n온도: -25 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRL2R3506",
+    "description": "전압: 2.3V\n용량: 50.0F\n온도: -25 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRL2R3706",
+    "description": "전압: 2.3V\n용량: 70.0F\n온도: -25 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRL2R3127",
+    "description": "전압: 2.3V\n용량: 120.0F\n온도: -25 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5105",
+    "description": "전압: 2.5V\n용량: 1.0F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5305",
+    "description": "전압: 2.5V\n용량: 3.0F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5505",
+    "description": "전압: 2.5V\n용량: 5.0F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5705",
+    "description": "전압: 2.5V\n용량: 7.0F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5106",
+    "description": "전압: 2.5V\n용량: 10.0F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5156",
+    "description": "전압: 2.5V\n용량: 15.0F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5226",
+    "description": "전압: 2.5V\n용량: 22.0F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5336",
+    "description": "전압: 2.5V\n용량: 33.0F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRT2R5506",
+    "description": "전압: 2.5V\n용량: 50.0F\n온도: -40 to +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5155",
+    "description": "전압: 2.5V\n용량: 1.5F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5205",
+    "description": "전압: 2.5V\n용량: 2.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5305",
+    "description": "전압: 2.5V\n용량: 3.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5405",
+    "description": "전압: 2.5V\n용량: 4.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5555",
+    "description": "전압: 2.5V\n용량: 5.5F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5805",
+    "description": "전압: 2.5V\n용량: 8.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5156",
+    "description": "전압: 2.5V\n용량: 15.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5206",
+    "description": "전압: 2.5V\n용량: 20.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R5306",
+    "description": "전압: 2.5V\n용량: 30.0F\n온도: -25 to +70",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7155",
+    "description": "전압: 2.7V\n용량: 1.5F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7205",
+    "description": "전압: 2.7V\n용량: 2.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7305",
+    "description": "전압: 2.7V\n용량: 3.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7405",
+    "description": "전압: 2.7V\n용량: 4.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7555",
+    "description": "전압: 2.7V\n용량: 5.5F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7805",
+    "description": "전압: 2.7V\n용량: 8.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7156",
+    "description": "전압: 2.7V\n용량: 15.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7206",
+    "description": "전압: 2.7V\n용량: 20.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "HP2R7306",
+    "description": "전압: 2.7V\n용량: 30.0F\n온도: -40 to +65",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7105",
+    "description": "전압: 2.7(70℃) / 2.3(85℃)V\n용량: 1.0F\n온도: -40 to +70 / +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7305",
+    "description": "전압: 2.7(70℃) / 2.3(85℃)V\n용량: 3.0F\n온도: -40 to +70 / +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7505",
+    "description": "전압: 2.7(70℃) / 2.3(85℃)V\n용량: 5.0F\n온도: -40 to +70 / +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7705",
+    "description": "전압: 2.7(70℃) / 2.3(85℃)V\n용량: 7.0F\n온도: -40 to +70 / +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7106",
+    "description": "전압: 2.7(70℃) / 2.3(85℃)V\n용량: 10.0F\n온도: -40 to +70 / +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7156",
+    "description": "전압: 2.7(70℃) / 2.3(85℃)V\n용량: 15.0F\n온도: -40 to +70 / +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7226",
+    "description": "전압: 2.7(70℃) / 2.3(85℃)V\n용량: 22.0F\n온도: -40 to +70 / +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7336",
+    "description": "전압: 2.7(70℃) / 2.3(85℃)V\n용량: 33.0F\n온도: -40 to +70 / +85",
+    "image": "logo.jpg",
+    "datasheet": "",
+    "category": "DR SERIES"
+  },
+  {
+    "name": "DRJ2R7506",
+    "description": "전압: 2.7(70℃) / 2.3(85℃)V\n용량: 50.0F\n온도: -40 to +70 / +85",
+    "image": "logo.jpg",
+    "datasheet": "",
     "category": "DR SERIES"
   }
 ]
