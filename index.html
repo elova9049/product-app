@@ -119,10 +119,26 @@
     .then(response => response.json())
     .then(products => {
       allProducts = products;
-      applyFilters(); // 초기 필터 적용
+      applyFilters(); // 초기 렌더링
     });
 
-  // 제품 렌더링 함수
+  // 필터 + 검색 적용 함수
+  function applyFilters() {
+    const keyword = document.getElementById('search').value.toLowerCase();
+
+    const filtered = allProducts.filter(product => {
+      const matchCategory = currentCategory === 'ALL' || product.category === currentCategory;
+      const matchKeyword =
+        product.name.toLowerCase().includes(keyword) ||
+        (product.description || '').toLowerCase().includes(keyword);
+
+      return matchCategory && matchKeyword;
+    });
+
+    renderProducts(filtered);
+  }
+
+  // 제품 그리기
   function renderProducts(products) {
     const list = document.getElementById('product-list');
     list.innerHTML = '';
@@ -146,27 +162,13 @@
     });
   }
 
-  // 검색 및 필터 동시 적용
-  function applyFilters() {
-    const keyword = document.getElementById('search').value.toLowerCase();
-
-    const filtered = allProducts.filter(product => {
-      const matchCategory = currentCategory === 'ALL' || product.category === currentCategory;
-      const matchKeyword = product.name.toLowerCase().includes(keyword) ||
-                           product.description.toLowerCase().includes(keyword);
-      return matchCategory && matchKeyword;
-    });
-
-    renderProducts(filtered);
-  }
-
-  // 카테고리 필터 버튼 클릭 시 호출
+  // 카테고리 버튼
   function filterCategory(category) {
     currentCategory = category;
     applyFilters();
   }
 
-  // 검색창 입력 시 필터링
+  // 검색 입력 시 적용
   document.getElementById('search').addEventListener('input', applyFilters);
 </script>
 </body>
