@@ -168,6 +168,18 @@
 
   // 검색 입력 시 적용
   document.getElementById('search').addEventListener('input', applyFilters);
+  function renderCategoryButtons(products) {
+  const container = document.getElementById('category-filter');
+  const categories = new Set(products.map(p => p.category));
+  const sorted = Array.from(categories).sort(); // 알파벳순 정렬
+
+  // "ALL" 버튼 먼저 추가
+  container.innerHTML = `<button onclick="filterCategory('ALL')">ALL</button>`;
+
+  sorted.forEach(category => {
+    container.innerHTML += `<button onclick="filterCategory('${category}')">${category}</button>`;
+  });
+}
 </script>
 </body>
 </html>
