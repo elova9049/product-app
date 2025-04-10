@@ -1,50 +1,61 @@
 
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Charge Time Calculator</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #f9f9f9;
-    }
-
-    h2 {
-      text-align: center;
+      background-color: #ffffff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
       color: #333;
     }
 
-    label {
+    img {
+      height: 60px;
+      margin-bottom: 30px;
       display: block;
-      margin: 12px 0;
-      font-size: 16px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    input {
-      padding: 8px;
-      font-size: 14px;
-      width: 100%;
-      box-sizing: border-box;
-      margin-top: 4px;
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 10px;
     }
 
-    button {
-      margin-top: 20px;
+    .menu a, button {
+      display: inline-block;
       padding: 10px 20px;
-      font-size: 16px;
+      margin: 10px 5px;
       background-color: #007BFF;
       color: white;
       border: none;
       border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
       cursor: pointer;
     }
 
-    button:hover {
+    button:hover, .menu a:hover {
       background-color: #0056b3;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-size: 16px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      font-size: 14px;
+      box-sizing: border-box;
     }
 
     #result {
@@ -53,61 +64,6 @@
       color: #444;
     }
   </style>
-
-<style>
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #ffffff;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    color: #333;
-  }
-  img {
-    height: 60px;
-    margin-bottom: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  h1, h2 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .menu a, button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 5px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  button:hover, .menu a:hover {
-    background-color: #0056b3;
-  }
-  label {
-    display: block;
-    margin-top: 12px;
-    font-size: 16px;
-  }
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    font-size: 14px;
-    box-sizing: border-box;
-  }
-  #result {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #444;
-  }
-</style>
-
 </head>
 <body>
   <img src="logo.jpg" alt="Logo">
@@ -128,14 +84,14 @@
       const I = parseFloat(document.getElementById('current').value) / 1000;
 
       if (I <= 0) {
-        document.getElementById('result').innerHTML = "⚠️ 전류는 0보다 커야 합니다.";
+        document.getElementById('result').innerHTML = "⚠️ Current must be greater than 0.";
         return;
       }
 
       const t = (C * dV) / I;
 
       document.getElementById('result').innerHTML = `
-        ⏱️ Estimated Charge Time: <strong>${t.toFixed(2)} 초</strong>
+        ⏱️ Estimated Charge Time: <strong>${t.toFixed(2)} seconds</strong>
       `;
     }
   </script>
