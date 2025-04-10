@@ -39,19 +39,40 @@
   </style>
 </head>
 <body>
-  <div id="lang-switch">
-    <button onclick="setLanguage('ko')">🇰🇷 Korean</button>
-    <button onclick="setLanguage('en')">🇺🇸 English</button>
-  </div>
+
+<div class="nav">
+  <a href="index.html">🏠 Home</a>
+  <a href="products.html">📦 Products</a>
+  <a href="calculators.html">🧮 Calculators</a>
+</div>
+<style>
+  .nav {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .nav a {
+    display: inline-block;
+    margin: 0 12px;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  .nav a:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+  
 
   <h1 id="name"></h1>
   <img id="image" src="" alt="Product Image">
   <p id="description"></p>
   <div id="download-button"></div>
 
-  <div class="back">
-    <a id="back-link" href="./">← ← Back to list</a>
-  </div>
+  
 
   <script>
     const params = new URLSearchParams(window.location.search);
