@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>제품 상세 보기</title>
+  <title>Product Detail</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -40,17 +40,17 @@
 </head>
 <body>
   <div id="lang-switch">
-    <button onclick="setLanguage('ko')">🇰🇷 한국어</button>
+    <button onclick="setLanguage('ko')">🇰🇷 Korean</button>
     <button onclick="setLanguage('en')">🇺🇸 English</button>
   </div>
 
   <h1 id="name"></h1>
-  <img id="image" src="" alt="제품 이미지">
+  <img id="image" src="" alt="Product Image">
   <p id="description"></p>
   <div id="download-button"></div>
 
   <div class="back">
-    <a id="back-link" href="./">← 목록으로 돌아가기</a>
+    <a id="back-link" href="./">← ← Back to list</a>
   </div>
 
   <script>
@@ -59,9 +59,9 @@
 
     const translations = {
       ko: {
-        back: "← 목록으로 돌아가기",
-        download: "📄 사양서 다운로드",
-        notFound: "제품을 찾을 수 없습니다."
+        back: "← ← Back to list",
+        download: "📄 Download Datasheet",
+        notFound: "Product not found."
       },
       en: {
         back: "← Back to list",
