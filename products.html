@@ -69,11 +69,10 @@
 
     #product-list {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 8px;
-      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      justify-items: stretch;
     }
-
     .product {
       background-color: white;
       border-radius: 14px;
@@ -81,7 +80,6 @@
       padding: 16px;
       text-align: left;
       width: 100%;
-      max-width: 200px;
       box-sizing: border-box;
       position: relative;
     }
