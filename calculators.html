@@ -1,87 +1,120 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Capacitor Calculators</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f5f7fa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #ffffff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
       color: #333;
     }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    img {
+      height: 60px;
       margin-bottom: 30px;
-    }
-
-    header img {
-      height: 40px;
-    }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #007BFF;
-      font-weight: 500;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     h1 {
       text-align: center;
       margin-bottom: 30px;
+      color: #333;
     }
 
     .menu {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      max-width: 900px;
-      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
     .menu a {
-      display: block;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      font-size: 18px;
-      color: #007BFF;
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 10px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 8px;
       text-decoration: none;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      transition: all 0.2s ease;
+      font-size: 16px;
     }
 
     .menu a:hover {
-      background-color: #e9f2ff;
+      background-color: #0056b3;
+    }
+
+    .list a {
+      display: block;
+      padding: 14px;
+      margin-bottom: 10px;
+      background-color: #f5f7fa;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      color: #007BFF;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .list a:hover {
+      background-color: #eaf2ff;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="calculators.html">Calculators</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <img src="logo.jpg" alt="Logo" />
-</header>
-
-<h1>Capacitor Calculators</h1>
-
-<div class="menu">
-  <a href="calculator-capacity.html">🔋 Capacitance Calculator</a>
-  <a href="calculator-charge.html">⏱️ Charge Time Calculator</a>
-  <a href="calculator-discharge.html">🔄 Discharge Time Calculator</a>
-  <a href="calculator-life.html">📆 Life Estimation Calculator</a>
+<div class="nav">
+  <a href="index.html">🏠 Home</a>
+  <a href="products.html">📦 Products</a>
+  <a href="calculators.html">🧮 Calculators</a>
 </div>
+<style>
+  .nav {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .nav a {
+    display: inline-block;
+    margin: 0 12px;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  .nav a:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+
+<div style="position:absolute; top:20px; right:20px; z-index: 100;">
+  <img src="logo.jpg" alt="Logo" style="height: 30px;">
+</div>
+
+
+
+
+
+
+
+  <h1>🔧 Capacitor Calculators</h1>
+  <div class="list">
+    <a href="calculator-capacity.html">🔋 Capacitance Calculator</a>
+    <a href="calculator-charge.html">⏱️ Charge Time Calculator</a>
+    <a href="calculator-discharge.html">🔄 Discharge Time Calculator</a>
+    <a href="calculator-life.html">⏳ Life Expectancy Calculator</a>
+  </div>
+
+<footer style="text-align:center; padding: 20px; font-size: 14px; color: #888;">
+  <p>&copy; 2025 Elova Corp. All rights reserved.</p>
+  
+</footer>
 
 </body>
 </html>
