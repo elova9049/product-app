@@ -2,175 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Products | Korchip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Korchip | Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      background-color: #fff;
+    * {
       margin: 0;
-      color: #111;
+      padding: 0;
+      box-sizing: border-box;
     }
-
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f6;
+      color: #222;
+      padding: 0 20px;
+    }
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 24px 40px;
-      background-color: #fff;
-      border-bottom: 1px solid #eee;
+      padding: 30px 0;
     }
-
     header img {
       height: 36px;
     }
-
     nav a {
-      margin-left: 32px;
+      margin-left: 24px;
       text-decoration: none;
-      color: #111;
+      color: #333;
       font-weight: 500;
-      font-size: 16px;
-    }
-
-    nav a:hover {
-      color: #007BFF;
-    }
-
-    main {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    h1 {
-      font-size: 28px;
-      text-align: center;
-      margin-bottom: 12px;
-    }
-
-    .subtitle {
-      text-align: center;
-      color: #666;
-      margin-bottom: 32px;
-    }
-
-    #category-filter {
-      text-align: center;
-      margin-bottom: 24px;
-    }
-
-    #category-filter button {
-      margin: 0 6px;
-      padding: 8px 16px;
-      border: 1px solid #ddd;
-      background: #f8f8f8;
-      border-radius: 6px;
-      font-size: 14px;
-      color: #111;
-      cursor: pointer;
-    }
-
-    #category-filter button:hover {
-      background-color: #007BFF;
-      color: #fff;
-      border-color: #007BFF;
-    }
-
-    #search {
-      display: block;
-      margin: 0 auto 40px;
-      padding: 10px;
-      font-size: 16px;
-      width: 100%;
-      max-width: 420px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-    }
-
-    #product-list {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 12px;
-    }
-
-    .product {
-      background-color: #fafafa;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
-      padding: 16px;
-      box-sizing: border-box;
-      text-align: left;
-      position: relative;
-      transition: transform 0.2s ease;
-    }
-
-    .product:hover {
-      transform: translateY(-3px);
-    }
-
-    .product img {
-      width: 100%;
-      height: 100px;
-      object-fit: contain;
-      border-radius: 8px;
-      margin-bottom: 12px;
-    }
-
-    .product h2 {
       font-size: 15px;
-      margin: 0 0 6px;
-      color: #111;
+      position: relative;
     }
-
-    .product p {
-      font-size: 13px;
-      color: #666;
-      white-space: pre-line;
-      line-height: 1.5;
-    }
-
-    .badge {
+    nav a::after {
+      content: "";
       position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: #007bff;
-      color: white;
-      font-size: 11px;
-      padding: 2px 6px;
-      border-radius: 8px;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #007bff;
+      transition: width 0.3s ease;
     }
-
-    @media (max-width: 1200px) {
-      #product-list {
-        grid-template-columns: repeat(4, 1fr);
-      }
+    nav a:hover::after {
+      width: 100%;
     }
-
-    @media (max-width: 900px) {
-      #product-list {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    @media (max-width: 600px) {
-      #product-list {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 400px) {
-      #product-list {
-        grid-template-columns: 1fr;
-      }
+    footer {
+      text-align: center;
+      padding: 40px 10px 60px;
+      font-size: 13px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.jpg" alt="Logo" />
+    <img src="logo.jpg" alt="Korchip Logo" />
     <nav>
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
@@ -179,80 +67,14 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Our Product Lineup</h1>
-    <p class="subtitle">Explore our latest Supercapacitor & Lithium Battery models</p>
-
-    <div id="category-filter">
-      <button onclick="filterCategory('ALL')">ALL</button>
-      <button onclick="filterCategory('DC SERIES')">DC SERIES</button>
-      <button onclick="filterCategory('DR SERIES')">DR SERIES</button>
-      <button onclick="filterCategory('SM SERIES')">SM SERIES</button>
-      <button onclick="filterCategory('DMS SERIES')">DMS SERIES</button>
-    </div>
-
-    <input type="text" id="search" placeholder="Search by name or description..." />
-
-    <div id="product-list"></div>
+  <main style="padding: 40px 10px;">
+    <h1 style="text-align:center; font-size:28px;">Product List</h1>
+    <div style="margin-top:20px; text-align:center;">Browse all products available.</div>
   </main>
 
-  <script>
-    let allProducts = [];
-    let currentCategory = 'ALL';
-
-    fetch('products.json')
-      .then(response => response.json())
-      .then(products => {
-        allProducts = products;
-        applyFilters();
-      });
-
-    function applyFilters() {
-      const keyword = document.getElementById('search').value.toLowerCase();
-
-      const filtered = allProducts
-        .filter(product => {
-          const matchCategory = currentCategory === 'ALL' || product.category === currentCategory;
-          const matchKeyword = product.name.toLowerCase().includes(keyword) ||
-                               (product.description || '').toLowerCase().includes(keyword);
-          return matchCategory && matchKeyword;
-        })
-        .sort((a, b) => (b.new === true ? 1 : 0) - (a.new === true ? 1 : 0));
-
-      renderProducts(filtered);
-    }
-
-    function renderProducts(products) {
-      const list = document.getElementById('product-list');
-      list.innerHTML = '';
-
-      if (products.length === 0) {
-        list.innerHTML = '<p style="grid-column: span 5; text-align: center; color: #888;">No matching products found.</p>';
-        return;
-      }
-
-      products.forEach(product => {
-        const item = document.createElement('div');
-        item.className = 'product';
-        item.innerHTML = `
-          ${product.new ? '<div class="badge">NEW</div>' : ''}
-          <a href="product.html?name=${encodeURIComponent(product.name)}" style="text-decoration: none; color: inherit;">
-            <img src="${product.image}" alt="${product.name}" />
-            <h2>${product.name}</h2>
-            <p>${product.description}</p>
-          </a>
-        `;
-        list.appendChild(item);
-      });
-    }
-
-    function filterCategory(category) {
-      currentCategory = category;
-      applyFilters();
-    }
-
-    document.getElementById('search').addEventListener('input', applyFilters);
-  </script>
+  <footer>
+    &copy; 2025 Korchip Corp. All rights reserved.
+  </footer>
 
 </body>
 </html>
