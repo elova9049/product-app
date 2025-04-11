@@ -12,66 +12,96 @@
       background-color: #f9f9f9;
       color: #333;
     }
+
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
+
     header img {
-      height: 40px;
+      height: 36px;
     }
+
     nav a {
-      margin-left: 20px;
+      margin-right: 20px;
       text-decoration: none;
-      color: #007BFF;
+      color: #333;
       font-weight: 500;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     h1 {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      font-size: 24px;
     }
+
+    p.subheading {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #666;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
     label {
       display: block;
-      margin: 10px 0 5px;
+      margin-bottom: 10px;
+      font-weight: 500;
     }
+
     input {
       width: 100%;
       padding: 10px;
-      font-size: 14px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      font-size: 16px;
       border: 1px solid #ccc;
-      border-radius: 6px;
+      border-radius: 8px;
       box-sizing: border-box;
     }
+
     button {
-      padding: 10px 20px;
+      width: 100%;
+      padding: 12px;
       font-size: 16px;
-      background-color: #007BFF;
-      color: white;
       border: none;
       border-radius: 8px;
+      background-color: #333;
+      color: white;
       cursor: pointer;
     }
+
     button:hover {
-      background-color: #0056b3;
+      background-color: #555;
     }
+
     #result {
       margin-top: 20px;
-      font-size: 16px;
-      line-height: 1.6;
+      font-size: 18px;
+      text-align: center;
+      color: #222;
     }
+
     .formula {
       margin-top: 30px;
+      font-size: 15px;
+      color: #444;
+      background-color: #f2f2f2;
       padding: 16px;
-      background-color: #f0f4ff;
-      border-left: 4px solid #007BFF;
-      font-size: 14px;
+      border-radius: 8px;
       line-height: 1.6;
-    }
-    .container {
-      max-width: 500px;
-      margin: auto;
     }
   </style>
 </head>
@@ -84,31 +114,33 @@
     <a href="calculators.html">Calculators</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <img src="logo.jpg" alt="Logo" />
+  <img src="logo.jpg" alt="Company Logo" />
 </header>
 
+<h1>🔋 Discharge Time Calculator</h1>
+<p class="subheading">Estimate how long a capacitor can supply power</p>
+
 <div class="container">
-  <h1>Discharge Time Calculator</h1>
+  <label>Capacitance (F):</label>
+  <input type="number" id="cap">
 
-  <label for="cap">Capacitance (F)</label>
-  <input type="number" id="cap" />
+  <label>Initial Voltage (V):</label>
+  <input type="number" id="v1">
 
-  <label for="v1">Max Voltage (V)</label>
-  <input type="number" id="v1" />
+  <label>Final Voltage (V):</label>
+  <input type="number" id="v2">
 
-  <label for="v2">Min Voltage (V)</label>
-  <input type="number" id="v2" />
-
-  <label for="current">Discharge Current (mA)</label>
-  <input type="number" id="current" />
+  <label>Discharge Current (mA):</label>
+  <input type="number" id="current">
 
   <button onclick="calculate()">Calculate</button>
-
   <div id="result"></div>
 
   <div class="formula">
-    <strong>Formula:</strong><br>
-    t = C × (V₁² - V₂²) / (2 × I)
+    <strong>Formula Used:</strong><br>
+    t = (C × (V₁² − V₂²)) / (2 × I)<br>
+    where:<br>
+    t = time (s), C = capacitance (F), V = voltage (V), I = current (A)
   </div>
 </div>
 
@@ -119,19 +151,13 @@
     const V2 = parseFloat(document.getElementById('v2').value);
     const I = parseFloat(document.getElementById('current').value) / 1000;
 
-    if (V1 <= V2) {
-      document.getElementById('result').innerHTML = "⚠️ Max Voltage must be greater than Min Voltage.";
-      return;
-    }
-    if (I <= 0) {
-      document.getElementById('result').innerHTML = "⚠️ Current must be greater than 0.";
+    if (V1 <= V2 || C <= 0 || I <= 0) {
+      document.getElementById('result').innerHTML = "⚠️ Please enter valid values.";
       return;
     }
 
     const t = (C * (V1 * V1 - V2 * V2)) / (2 * I);
-    document.getElementById('result').innerHTML = `
-      ⏱️ Estimated Discharge Time: <strong>${t.toFixed(2)} seconds</strong>
-    `;
+    document.getElementById('result').innerHTML = `⏱️ Estimated Discharge Time: <strong>${t.toFixed(2)} seconds</strong>`;
   }
 </script>
 
