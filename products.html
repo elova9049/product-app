@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Product List</title>
+  <title>Products | Korchip</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -18,45 +18,54 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
-      background-color: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      background-color: white;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
     }
 
     header img {
-      height: 40px;
+      height: 36px;
     }
 
     nav a {
-      margin-right: 24px;
+      margin-left: 24px;
       text-decoration: none;
       color: #007BFF;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 15px;
     }
 
-    nav a:last-child {
-      margin-right: 0;
+    nav a:hover {
+      color: #0056b3;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     h1 {
       text-align: center;
-      margin: 40px 0 20px;
-      font-size: 28px;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
     }
 
     #category-filter {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     #category-filter button {
-      margin: 4px 6px;
-      padding: 8px 16px;
+      margin: 0 6px;
+      padding: 10px 18px;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       background-color: #007BFF;
       color: white;
       font-size: 14px;
@@ -69,33 +78,27 @@
 
     #search {
       display: block;
-      margin: 0 auto 30px;
-      padding: 10px;
+      margin: 0 auto 40px;
+      padding: 12px;
       font-size: 16px;
       width: 100%;
       max-width: 400px;
       border: 1px solid #ccc;
-      border-radius: 8px;
+      border-radius: 10px;
     }
 
     #product-list {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 16px;
-      justify-items: center;
-      padding: 0 40px 60px;
-      max-width: 1440px;
-      margin: 0 auto;
     }
 
     .product {
       background-color: white;
-      border-radius: 14px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
       padding: 16px;
       text-align: left;
-      width: 100%;
-      max-width: 200px;
       box-sizing: border-box;
       position: relative;
       transition: transform 0.2s ease-in-out;
@@ -109,12 +112,11 @@
       width: 100%;
       height: 110px;
       object-fit: contain;
-      border-radius: 10px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .product h2 {
-      font-size: 15px;
+      font-size: 14px;
       margin: 0 0 6px;
       color: #222;
     }
@@ -122,7 +124,6 @@
     .product p {
       font-size: 13px;
       color: #555;
-      line-height: 1.4;
       white-space: pre-line;
     }
 
@@ -164,87 +165,90 @@
 </head>
 <body>
 
-<header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="calculators.html">Calculators</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <img src="logo.jpg" alt="Logo" />
-</header>
+  <header>
+    <img src="logo.jpg" alt="Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="calculators.html">Calculators</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<h1>Product List</h1>
+  <main>
+    <h1>Our Product Lineup</h1>
+    <p class="subtitle">Explore our latest Supercapacitor & Lithium Battery models</p>
 
-<div id="category-filter">
-  <button onclick="filterCategory('ALL')">ALL</button>
-  <button onclick="filterCategory('DC SERIES')">DC SERIES</button>
-  <button onclick="filterCategory('DR SERIES')">DR SERIES</button>
-  <button onclick="filterCategory('SM SERIES')">SM SERIES</button>
-  <button onclick="filterCategory('DMS SERIES')">DMS SERIES</button>
-</div>
+    <div id="category-filter">
+      <button onclick="filterCategory('ALL')">ALL</button>
+      <button onclick="filterCategory('DC SERIES')">DC SERIES</button>
+      <button onclick="filterCategory('DR SERIES')">DR SERIES</button>
+      <button onclick="filterCategory('SM SERIES')">SM SERIES</button>
+      <button onclick="filterCategory('DMS SERIES')">DMS SERIES</button>
+    </div>
 
-<input type="text" id="search" placeholder="Search by name or description..." />
+    <input type="text" id="search" placeholder="Search by name or description..." />
 
-<div id="product-list"></div>
+    <div id="product-list"></div>
+  </main>
 
-<script>
-  let allProducts = [];
-  let currentCategory = 'ALL';
+  <script>
+    let allProducts = [];
+    let currentCategory = 'ALL';
 
-  fetch('products.json')
-    .then(response => response.json())
-    .then(products => {
-      allProducts = products;
-      applyFilters();
-    });
+    fetch('products.json')
+      .then(response => response.json())
+      .then(products => {
+        allProducts = products;
+        applyFilters();
+      });
 
-  function applyFilters() {
-    const keyword = document.getElementById('search').value.toLowerCase();
+    function applyFilters() {
+      const keyword = document.getElementById('search').value.toLowerCase();
 
-    const filtered = allProducts
-      .filter(product => {
-        const matchCategory = currentCategory === 'ALL' || product.category === currentCategory;
-        const matchKeyword = product.name.toLowerCase().includes(keyword) ||
-                             (product.description || '').toLowerCase().includes(keyword);
-        return matchCategory && matchKeyword;
-      })
-      .sort((a, b) => (b.new === true ? 1 : 0) - (a.new === true ? 1 : 0)); // New first
+      const filtered = allProducts
+        .filter(product => {
+          const matchCategory = currentCategory === 'ALL' || product.category === currentCategory;
+          const matchKeyword = product.name.toLowerCase().includes(keyword) ||
+                               (product.description || '').toLowerCase().includes(keyword);
+          return matchCategory && matchKeyword;
+        })
+        .sort((a, b) => (b.new === true ? 1 : 0) - (a.new === true ? 1 : 0)); // New first
 
-    renderProducts(filtered);
-  }
-
-  function renderProducts(products) {
-    const list = document.getElementById('product-list');
-    list.innerHTML = '';
-
-    if (products.length === 0) {
-      list.innerHTML = '<p style="grid-column: span 5; text-align: center; color: #888;">No matching products found.</p>';
-      return;
+      renderProducts(filtered);
     }
 
-    products.forEach(product => {
-      const item = document.createElement('div');
-      item.className = 'product';
-      item.innerHTML = `
-        ${product.new ? '<div class="badge">NEW</div>' : ''}
-        <a href="product.html?name=${encodeURIComponent(product.name)}" style="text-decoration: none; color: inherit;">
-          <img src="${product.image}" alt="${product.name}" />
-          <h2>${product.name}</h2>
-          <p>${product.description}</p>
-        </a>
-      `;
-      list.appendChild(item);
-    });
-  }
+    function renderProducts(products) {
+      const list = document.getElementById('product-list');
+      list.innerHTML = '';
 
-  function filterCategory(category) {
-    currentCategory = category;
-    applyFilters();
-  }
+      if (products.length === 0) {
+        list.innerHTML = '<p style="grid-column: span 5; text-align: center; color: #888;">No matching products found.</p>';
+        return;
+      }
 
-  document.getElementById('search').addEventListener('input', applyFilters);
-</script>
+      products.forEach(product => {
+        const item = document.createElement('div');
+        item.className = 'product';
+        item.innerHTML = `
+          ${product.new ? '<div class="badge">NEW</div>' : ''}
+          <a href="product.html?name=${encodeURIComponent(product.name)}" style="text-decoration: none; color: inherit;">
+            <img src="${product.image}" alt="${product.name}" />
+            <h2>${product.name}</h2>
+            <p>${product.description}</p>
+          </a>
+        `;
+        list.appendChild(item);
+      });
+    }
+
+    function filterCategory(category) {
+      currentCategory = category;
+      applyFilters();
+    }
+
+    document.getElementById('search').addEventListener('input', applyFilters);
+  </script>
 
 </body>
 </html>
