@@ -1,48 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Supercapacitor Life Expectancy Calculator</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Life Estimation Calculator</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background-color: #ffffff;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
       color: #333;
     }
-
-    img {
-      height: 60px;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin-bottom: 30px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
     }
-
-    h2 {
+    header img {
+      height: 40px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: 500;
+    }
+    h1 {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
-
     label {
       display: block;
-      margin-top: 12px;
-      font-size: 16px;
+      margin: 10px 0 5px;
     }
-
     input {
       width: 100%;
-      padding: 8px;
-      margin-top: 4px;
+      padding: 10px;
       font-size: 14px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
       box-sizing: border-box;
     }
-
     button {
-      margin-top: 20px;
       padding: 10px 20px;
       font-size: 16px;
       background-color: #007BFF;
@@ -51,95 +53,77 @@
       border-radius: 8px;
       cursor: pointer;
     }
-
     button:hover {
       background-color: #0056b3;
     }
-
     #result {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .formula {
       margin-top: 30px;
-      font-size: 18px;
-      color: #444;
+      padding: 16px;
+      background-color: #f0f4ff;
+      border-left: 4px solid #007BFF;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
     }
   </style>
 </head>
 <body>
 
-<div style="position:absolute; top:20px; right:20px; z-index: 100;">
-  <img src="logo.jpg" alt="Logo" style="height: 30px;">
-</div>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="calculators.html">Calculators</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <img src="logo.jpg" alt="Logo" />
+</header>
 
+<div class="container">
+  <h1>Life Estimation Calculator</h1>
 
+  <label for="ratedLife">Rated Life (hrs at rated temp)</label>
+  <input type="number" id="ratedLife" />
 
+  <label for="ratedTemp">Rated Temperature (°C)</label>
+  <input type="number" id="ratedTemp" />
 
-
-<div class="nav">
-  <a href="index.html">🏠 Home</a>
-  <a href="products.html">📦 Products</a>
-  <a href="calculators.html">🧮 Calculators</a>
-</div>
-<style>
-  .nav {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .nav a {
-    display: inline-block;
-    margin: 0 12px;
-    padding: 8px 16px;
-    text-decoration: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 6px;
-    font-size: 15px;
-  }
-  .nav a:hover {
-    background-color: #0056b3;
-  }
-</style>
-
-  
-  <h2>⏳ Supercapacitor Life Expectancy Calculator</h2>
-
-  <label>Rated Voltage (V):<br><input type="number" id="v0" value="5.5" step="0.1" /></label>
-  <label>Operating Voltage (V):<br><input type="number" id="v" value="4.5" step="0.1" /></label>
-  <label>Reference Lifetime (hrs):<br><input type="number" id="l0" value="1000" /></label>
-  <label>Reference Temperature (°C):<br><input type="number" id="t0" value="25" /></label>
-  <label>Operating Temperature (°C):<br><input type="number" id="t" value="60" /></label>
-  <label>Voltage Acceleration Factor (n):<br><input type="number" id="n" value="7" /></label>
+  <label for="actualTemp">Actual Operating Temperature (°C)</label>
+  <input type="number" id="actualTemp" />
 
   <button onclick="calculate()">Calculate</button>
 
   <div id="result"></div>
 
-  <script>
-    function calculate() {
-      const V0 = parseFloat(document.getElementById('v0').value);
-      const V = parseFloat(document.getElementById('v').value);
-      const L0 = parseFloat(document.getElementById('l0').value);
-      const T0 = parseFloat(document.getElementById('t0').value);
-      const T = parseFloat(document.getElementById('t').value);
-      const n = parseFloat(document.getElementById('n').value);
+  <div class="formula">
+    <strong>Formula:</strong><br>
+    Life = Rated Life × 2^((Rated Temp - Actual Temp) / 10)
+  </div>
+</div>
 
-      if (V <= 0 || V >= V0) {
-        document.getElementById('result').innerHTML = "⚠️ Operating voltage must be less than rated voltage and greater than 0.";
-        return;
-      }
+<script>
+  function calculate() {
+    const ratedLife = parseFloat(document.getElementById('ratedLife').value);
+    const ratedTemp = parseFloat(document.getElementById('ratedTemp').value);
+    const actualTemp = parseFloat(document.getElementById('actualTemp').value);
 
-      const tempFactor = Math.pow(2, (T0 - T) / 10);
-      const voltFactor = Math.pow(V0 / V, n);
-      const life = L0 * tempFactor * voltFactor;
-
-      document.getElementById('result').innerHTML = `
-        🔋 Estimated Life: <strong>${life.toFixed(0)} hours</strong>
-      `;
+    if (isNaN(ratedLife) || isNaN(ratedTemp) || isNaN(actualTemp)) {
+      document.getElementById('result').innerHTML = "⚠️ Please enter valid values.";
+      return;
     }
-  </script>
 
-<footer style="text-align:center; padding: 20px; font-size: 14px; color: #888;">
-  <p>&copy; 2025 Elova Corp. All rights reserved.</p>
-  
-</footer>
+    const life = ratedLife * Math.pow(2, (ratedTemp - actualTemp) / 10);
+    document.getElementById('result').innerHTML = `📆 Estimated Life: <strong>${life.toFixed(2)} hours</strong>`;
+  }
+</script>
 
 </body>
 </html>
