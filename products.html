@@ -8,9 +8,8 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       font-size: 16px;
-      background-color: #f9f9f9;
+      background-color: #fff;
       margin: 0;
-      padding: 0;
       color: #111;
     }
 
@@ -18,9 +17,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 40px;
+      padding: 24px 40px;
       background-color: #fff;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      border-bottom: 1px solid #eee;
     }
 
     header img {
@@ -28,15 +27,15 @@
     }
 
     nav a {
-      margin-left: 24px;
+      margin-left: 32px;
       text-decoration: none;
-      color: #007BFF;
+      color: #111;
       font-weight: 500;
-      font-size: 15px;
+      font-size: 16px;
     }
 
     nav a:hover {
-      color: #0056b3;
+      color: #007BFF;
     }
 
     main {
@@ -46,46 +45,46 @@
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       text-align: center;
-      margin-bottom: 10px;
-      color: #111;
+      margin-bottom: 12px;
     }
 
     .subtitle {
       text-align: center;
       color: #666;
-      font-size: 16px;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
 
     #category-filter {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
 
     #category-filter button {
       margin: 0 6px;
-      padding: 10px 18px;
-      border: none;
-      border-radius: 8px;
-      background-color: #007BFF;
-      color: white;
+      padding: 8px 16px;
+      border: 1px solid #ddd;
+      background: #f8f8f8;
+      border-radius: 6px;
       font-size: 14px;
+      color: #111;
       cursor: pointer;
     }
 
     #category-filter button:hover {
-      background-color: #0056b3;
+      background-color: #007BFF;
+      color: #fff;
+      border-color: #007BFF;
     }
 
     #search {
       display: block;
       margin: 0 auto 40px;
-      padding: 12px;
+      padding: 10px;
       font-size: 16px;
       width: 100%;
-      max-width: 400px;
+      max-width: 420px;
       border: 1px solid #ccc;
       border-radius: 10px;
     }
@@ -97,29 +96,30 @@
     }
 
     .product {
-      background-color: white;
-      border-radius: 14px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      background-color: #fafafa;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
       padding: 16px;
-      text-align: left;
       box-sizing: border-box;
+      text-align: left;
       position: relative;
-      transition: transform 0.2s ease-in-out;
+      transition: transform 0.2s ease;
     }
 
     .product:hover {
-      transform: translateY(-4px);
+      transform: translateY(-3px);
     }
 
     .product img {
       width: 100%;
-      height: 110px;
+      height: 100px;
       object-fit: contain;
-      margin-bottom: 10px;
+      border-radius: 8px;
+      margin-bottom: 12px;
     }
 
     .product h2 {
-      font-size: 14px;
+      font-size: 15px;
       margin: 0 0 6px;
       color: #111;
     }
@@ -128,13 +128,14 @@
       font-size: 13px;
       color: #666;
       white-space: pre-line;
+      line-height: 1.5;
     }
 
     .badge {
       position: absolute;
       top: 10px;
       right: 10px;
-      background-color: #007BFF;
+      background-color: #007bff;
       color: white;
       font-size: 11px;
       padding: 2px 6px;
@@ -216,7 +217,7 @@
                                (product.description || '').toLowerCase().includes(keyword);
           return matchCategory && matchKeyword;
         })
-        .sort((a, b) => (b.new === true ? 1 : 0) - (a.new === true ? 1 : 0)); // New first
+        .sort((a, b) => (b.new === true ? 1 : 0) - (a.new === true ? 1 : 0));
 
       renderProducts(filtered);
     }
