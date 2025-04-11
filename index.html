@@ -1,23 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>WELCOME TO THE KORCHIP</title>
+  <meta charset="UTF-8" />
+  <title>Korchip Product Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background-color: #ffffff;
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #f5f7fa;
       color: #333;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 60px 20px;
-      text-align: center;
     }
 
-    img {
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header img {
       height: 60px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     h1 {
@@ -25,85 +28,90 @@
       margin-bottom: 10px;
     }
 
-    p {
+    .tagline {
+      color: #777;
       font-size: 16px;
-      color: #666;
-      margin-bottom: 40px;
     }
 
-    .menu a {
-      display: block;
-      margin: 12px auto;
-      padding: 14px 24px;
-      width: 240px;
-      font-size: 16px;
+    .keywords {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 10px;
+      color: #999;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 30px;
+      justify-items: center;
+      margin-top: 40px;
+    }
+
+    .feature-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: #f8f9fb;
+      border-radius: 16px;
+      height: 160px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: all 0.2s ease;
+      text-align: center;
+      justify-content: center;
       text-decoration: none;
-      background-color: #007BFF;
-      color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-      transition: background-color 0.2s ease;
+      color: inherit;
     }
 
-    .menu a:hover {
-      background-color: #0056b3;
+    .feature-item:hover {
+      background-color: #e9f2ff;
+    }
+
+    .feature-item i {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .feature-item span {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.4;
     }
 
     footer {
+      text-align: center;
       margin-top: 60px;
-      font-size: 12px;
+      font-size: 14px;
       color: #aaa;
     }
-  
-
-.menu-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 40px;
-}
-.menu-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 140px;
-  height: 120px;
-  text-align: center;
-  background-color: #007BFF;
-  color: white;
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: background-color 0.2s ease;
-}
-.menu-button:hover {
-  background-color: #0056b3;
-}
-.menu-button span {
-  margin-top: 8px;
-}
-</style>
+  </style>
 </head>
 <body>
+  <header>
+    <img src="logo.jpg" alt="Korchip Logo" />
+    <h1>Korchip Product Hub</h1>
+    <div class="tagline">Explore our Capacitor Technologies</div>
+    <div class="keywords">Supercapacitor · Lithium-ion Battery · Support</div>
+  </header>
 
-  <img src="logo.jpg" alt="엘로바 Logo">
-  <h1>ELOVA TOOLS</h1>
-  <p>Supercapacitor · Li-ion Battery · Energy Storage</p>
-
-  
-<div class="menu-grid">
-  <a href="products.html" class="menu-button">📦<span>Product List</span></a>
-  <a href="calculators.html" class="menu-button">🧮<span>Capacitor Calculators</span></a>
-  <a href="contact.html" class="menu-button">📨<span>Contact Us</span></a>
-</div>
-
+  <div class="feature-grid">
+    <a href="products.html" class="feature-item">
+      <i>📦</i>
+      <span>Product List</span>
+    </a>
+    <a href="calculators.html" class="feature-item">
+      <i>🧮</i>
+      <span>Capacitor Calculators</span>
+    </a>
+    <a href="contact.html" class="feature-item">
+      <i>✉️</i>
+      <span>Contact Us</span>
+    </a>
+  </div>
 
   <footer>
-    © 2025 ELOVA. All rights reserved.
+    © 2025 Korchip Co., Ltd. All rights reserved.
   </footer>
-
 </body>
 </html>
