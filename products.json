@@ -261,21 +261,21 @@
   {
     "name": "SM3R3333",
     "description": "Voltage: 3.3V<br>Capacitance: 0.033F<br>Temperature: -10 to +60°C",
-    "image": "logo.jpg",
+    "image": "sm.png",
     "datasheet": "",
     "category": "SM SERIES"
   },
   {
     "name": "SM3R3703",
     "description": "Voltage: 3.3V<br>Capacitance: 0.07F<br>Temperature: -10 to +60°C",
-    "image": "logo.jpg",
+    "image": "sm.png",
     "datasheet": "",
     "category": "SM SERIES"
   },
   {
     "name": "DMS3R3224RS",
     "description": "Voltage: 3.3V<br>Capacitance: 0.22F<br>Temperature: -10 to +60°C",
-    "image": "logo.jpg",
+    "image": "dms-rs.jpg",
     "datasheet": "",
     "category": "DMS SERIES"
   },
