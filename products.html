@@ -21,7 +21,7 @@
     }
 
     header img {
-      height: 40px;
+      height: 36px;
     }
 
     nav a {
@@ -69,10 +69,11 @@
 
     #product-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(5, 1fr);
       gap: 12px;
-      justify-items: stretch;
+      justify-items: center;
     }
+
     .product {
       background-color: white;
       border-radius: 14px;
@@ -80,8 +81,13 @@
       padding: 16px;
       text-align: left;
       width: 100%;
+      max-width: 200px;
       box-sizing: border-box;
       position: relative;
+      height: 270px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .product:hover {
@@ -91,10 +97,10 @@
 
     .product img {
       width: 100%;
-      height: 110px;
+      height: 100px;
       object-fit: contain;
       border-radius: 10px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .product h2 {
@@ -106,8 +112,10 @@
     .product p {
       font-size: 13px;
       color: #555;
-      line-height: 1.5;
+      line-height: 1.4;
       white-space: pre-line;
+      margin: 0;
+      word-break: break-word;
     }
 
     .badge {
@@ -149,13 +157,13 @@
 <body>
 
 <header>
-  <img src="logo.jpg" alt="Logo" />
   <nav>
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
     <a href="calculators.html">Calculators</a>
     <a href="contact.html">Contact</a>
   </nav>
+  <img src="logo.jpg" alt="Logo" />
 </header>
 
 <h1>Product List</h1>
@@ -193,7 +201,7 @@
                              (product.description || '').toLowerCase().includes(keyword);
         return matchCategory && matchKeyword;
       })
-      .sort((a, b) => (b.new === true) - (a.new === true)); // NEW 항목 먼저
+      .sort((a, b) => (b.new === true ? 1 : 0) - (a.new === true ? 1 : 0)); // New first
 
     renderProducts(filtered);
   }
