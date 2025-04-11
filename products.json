@@ -881,4 +881,28 @@
     "datasheet": "",
     "category": "DR SERIES"
   }
+{
+    "name": "DCSR5R5224",
+    "description": "Voltage: 5.5V<br>Capacitance: 0.22F<br>Temperature: -40 to +70°C",
+    "image": "dcsr.png",
+    "datasheet": "",
+    "category": "DC SERIES"
+    "new": true
+  },
+{
+    "name": "DCSR5R5334",
+    "description": "Voltage: 5.5V<br>Capacitance: 0.33F<br>Temperature: -40 to +70°C",
+    "image": "dcsr.png",
+    "datasheet": "",
+    "category": "DC SERIES"
+    "new": true
+  },
+{
+    "name": "DCSR5R5474",
+    "description": "Voltage: 5.5V<br>Capacitance: 0.47F<br>Temperature: -40 to +70°C",
+    "image": "dcsr.png",
+    "datasheet": "",
+    "category": "DC SERIES"
+    "new": true
+  }
 ]
