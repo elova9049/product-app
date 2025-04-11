@@ -159,16 +159,14 @@
   let allProducts = [];
   let currentCategory = 'ALL';
 
-  // 제품 불러오기
   fetch('products.json')
     .then(response => response.json())
     .then(products => {
       allProducts = products;
-      renderCategoryButtons(products); // 카테고리 버튼 생성
-      applyFilters(); // 초기 렌더링
+      renderCategoryButtons(products);
+      applyFilters();
     });
 
-  // 필터 + 검색 적용 함수
   function applyFilters() {
     const keyword = document.getElementById('search').value.toLowerCase();
 
@@ -184,23 +182,24 @@
     renderProducts(filtered);
   }
 
-  // 제품 그리기
   function renderProducts(products) {
     const list = document.getElementById('product-list');
     list.innerHTML = '';
 
     if (products.length === 0) {
-      list.innerHTML = '<p style="text-align:center; color:#888;">일치하는 제품이 없습니다.</p>';
+      list.innerHTML = '<p style="text-align:center; color:#888;">No matching products found.</p>';
       return;
     }
 
     products.forEach(product => {
+      const isNew = product.new ? `<span style="background-color:#007BFF; color:white; font-size:10px; padding:2px 6px; border-radius:8px; margin-left:6px;">NEW</span>` : '';
+
       const item = document.createElement('div');
       item.className = 'product';
       item.innerHTML = `
         <a href="product.html?name=${encodeURIComponent(product.name)}" style="text-decoration:none; color:inherit;">
-          <img src="${product.image}" alt="제품 이미지">
-          <h2>${product.name}</h2>
+          <img src="${product.image}" alt="Product Image">
+          <h2>${product.name} ${isNew}</h2>
           <p>${product.description.replace(/\n/g, '<br>')}</p>
         </a>
       `;
@@ -208,26 +207,23 @@
     });
   }
 
-  // 카테고리 버튼
   function filterCategory(category) {
     currentCategory = category;
     applyFilters();
   }
 
-  // 검색 입력 시 적용
   document.getElementById('search').addEventListener('input', applyFilters);
+
   function renderCategoryButtons(products) {
-  const container = document.getElementById('category-filter');
-  const categories = new Set(products.map(p => p.category));
-  const sorted = Array.from(categories).sort(); // 알파벳순 정렬
+    const container = document.getElementById('category-filter');
+    const categories = new Set(products.map(p => p.category));
+    const sorted = Array.from(categories).sort();
 
-  // "ALL" 버튼 먼저 추가
-  container.innerHTML = `<button onclick="filterCategory('ALL')">ALL</button>`;
-
-  sorted.forEach(category => {
-    container.innerHTML += `<button onclick="filterCategory('${category}')">${category}</button>`;
-  });
-}
+    container.innerHTML = `<button onclick="filterCategory('ALL')">ALL</button>`;
+    sorted.forEach(category => {
+      container.innerHTML += `<button onclick="filterCategory('${category}')">${category}</button>`;
+    });
+  }
 </script>
 
 <footer style="text-align:center; padding: 20px; font-size: 14px; color: #888;">
