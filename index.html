@@ -2,122 +2,182 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Korchip Product App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Korchip | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    @font-face {
-      font-family: 'SF Pro Display';
-      src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/10656/SFProDisplay-Regular.woff') format('woff');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f7fa;
-      color: #333;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f6;
+      color: #222;
+      padding: 0 20px;
     }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 24px 40px;
+      padding: 30px 0;
     }
 
     header img {
-      height: 40px;
+      height: 36px;
     }
 
-    main {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-      color: #666;
-      margin-bottom: 40px;
-    }
-
-    .menu-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .menu-grid a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      background: white;
-      border-radius: 16px;
+    nav a {
+      margin-left: 24px;
       text-decoration: none;
-      color: #007BFF;
+      color: #333;
+      font-weight: 500;
+      font-size: 15px;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #007bff;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .keywords {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
       font-size: 16px;
-      height: 180px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: all 0.2s ease;
+      color: #555;
+      font-weight: 500;
     }
 
-    .menu-grid a:hover {
-      background-color: #f0f8ff;
-      transform: translateY(-3px);
+    .menu {
+      max-width: 1000px;
+      margin: 60px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      padding: 0 10px;
     }
 
-    .menu-grid a i {
-      font-size: 36px;
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-icon {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #007BFF;
       margin-bottom: 10px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
 
     footer {
-      margin-top: 60px;
       text-align: center;
-      font-size: 14px;
-      color: #999;
-      padding-bottom: 40px;
+      padding: 40px 10px 60px;
+      font-size: 13px;
+      color: #aaa;
     }
   </style>
-  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
 
   <header>
-    <div></div>
     <img src="logo.jpg" alt="Korchip Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="calculators.html">Calculators</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <h1>Welcome to Korchip</h1>
-    <p>Supercapacitors · Lithium Batteries · Support</p>
+  <section class="hero">
+    <h1>Powering the Future</h1>
+    <p>Advanced Supercapacitors and Lithium Rechargeable Solutions</p>
+    <div class="keywords">
+      <span>Supercapacitor</span>
+      <span>·</span>
+      <span>Lithium Rechargeable</span>
+      <span>·</span>
+      <span>Support</span>
+    </div>
+  </section>
 
-    <div class="menu-grid">
+  <section class="menu">
+    <div class="card">
       <a href="products.html">
-        <i class="fas fa-cubes"></i>
-        Product List
-      </a>
-      <a href="calculators.html">
-        <i class="fas fa-calculator"></i>
-        Capacitor Calculators
-      </a>
-      <a href="contact.html">
-        <i class="fas fa-envelope"></i>
-        Contact Us
+        <div class="card-icon">📦</div>
+        <div class="card-title">Product List</div>
+        <p>Explore our full range of energy solutions</p>
       </a>
     </div>
-  </main>
+    <div class="card">
+      <a href="calculators.html">
+        <div class="card-icon">🧮</div>
+        <div class="card-title">Calculators</div>
+        <p>Find the right capacitor for your needs</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="contact.html">
+        <div class="card-icon">📧</div>
+        <div class="card-title">Contact Us</div>
+        <p>We're here to help with your inquiries</p>
+      </a>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2024 Korchip Corp. All rights reserved.
+    &copy; 2025 Korchip Corp. All rights reserved.
   </footer>
 
 </body>
