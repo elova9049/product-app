@@ -1,39 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Charge Time Calculator</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      max-width: 600px;
-      margin: 40px auto;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
       padding: 20px;
       background-color: #f9f9f9;
-    }
-
-    h2 {
-      text-align: center;
       color: #333;
     }
-
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    header img {
+      height: 40px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: 500;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
     label {
       display: block;
-      margin: 12px 0;
-      font-size: 16px;
+      margin: 10px 0 5px;
     }
-
     input {
-      padding: 8px;
-      font-size: 14px;
       width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
       box-sizing: border-box;
-      margin-top: 4px;
     }
-
     button {
-      margin-top: 20px;
       padding: 10px 20px;
       font-size: 16px;
       background-color: #007BFF;
@@ -42,86 +53,80 @@
       border-radius: 8px;
       cursor: pointer;
     }
-
     button:hover {
       background-color: #0056b3;
     }
-
     #result {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .formula {
       margin-top: 30px;
-      font-size: 18px;
-      color: #444;
+      padding: 16px;
+      background-color: #f0f4ff;
+      border-left: 4px solid #007BFF;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
     }
   </style>
 </head>
 <body>
 
-<div style="position:absolute; top:20px; right:20px; z-index: 100;">
-  <img src="logo.jpg" alt="Logo" style="height: 30px;">
-</div>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="calculators.html">Calculators</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <img src="logo.jpg" alt="Logo" />
+</header>
 
+<div class="container">
+  <h1>Charge Time Calculator</h1>
 
+  <label for="cap">Capacitance (F)</label>
+  <input type="number" id="cap" />
 
+  <label for="voltage">Target Voltage (V)</label>
+  <input type="number" id="voltage" />
 
-
-<div class="nav">
-  <a href="index.html">🏠 Home</a>
-  <a href="products.html">📦 Products</a>
-  <a href="calculators.html">🧮 Calculators</a>
-</div>
-<style>
-  .nav {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .nav a {
-    display: inline-block;
-    margin: 0 12px;
-    padding: 8px 16px;
-    text-decoration: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 6px;
-    font-size: 15px;
-  }
-  .nav a:hover {
-    background-color: #0056b3;
-  }
-</style>
-
-  <h2>⏱️ Charge Time Calculator</h2>
-
-  <label>Capacitance (F):<br><input type="number" id="cap" /></label>
-  <label>Voltage Change (V):<br><input type="number" id="dv" /></label>
-  <label>Charge Current (mA):<br><input type="number" id="current" /></label>
+  <label for="current">Charge Current (mA)</label>
+  <input type="number" id="current" />
 
   <button onclick="calculate()">Calculate</button>
 
   <div id="result"></div>
 
-  <script>
-    function calculate() {
-      const C = parseFloat(document.getElementById('cap').value);
-      const dV = parseFloat(document.getElementById('dv').value);
-      const I = parseFloat(document.getElementById('current').value) / 1000;
+  <div class="formula">
+    <strong>Formula:</strong><br>
+    t = (C × V) / I
+  </div>
+</div>
 
-      if (I <= 0) {
-        document.getElementById('result').innerHTML = "⚠️ Current must be greater than 0.";
-        return;
-      }
+<script>
+  function calculate() {
+    const C = parseFloat(document.getElementById('cap').value);
+    const V = parseFloat(document.getElementById('voltage').value);
+    const I = parseFloat(document.getElementById('current').value) / 1000;
 
-      const t = (C * dV) / I;
-
-      document.getElementById('result').innerHTML = `
-        ⏱️ Estimated Charge Time: <strong>${t.toFixed(2)} 초</strong>
-      `;
+    if (I <= 0) {
+      document.getElementById('result').innerHTML = "⚠️ Charge current must be greater than 0.";
+      return;
     }
-  </script>
 
-<footer style="text-align:center; padding: 20px; font-size: 14px; color: #888;">
-  <p>&copy; 2025 Elova Corp. All rights reserved.</p>
-  
-</footer>
+    const t = (C * V) / I;
+
+    document.getElementById('result').innerHTML = `
+      🔋 Estimated Charge Time: <strong>${t.toFixed(2)} seconds</strong>
+    `;
+  }
+</script>
 
 </body>
 </html>
