@@ -205,35 +205,35 @@
   {
     "name": "DCLT3R6105",
     "description": "Voltage: 3.6V<br>Capacitance: 1.0F<br>Temperature: -25 to +85°C",
-    "image": "logo.jpg",
+    "image": "dclt.gif",
     "datasheet": "",
     "category": "DC SERIES"
   },
   {
     "name": "DCLT3R6155",
     "description": "Voltage: 3.6V<br>Capacitance: 1.5F<br>Temperature: -25 to +85°C",
-    "image": "logo.jpg",
+    "image": "dclt.gif",
     "datasheet": "",
     "category": "DC SERIES"
   },
   {
     "name": "DCLT5R5474",
     "description": "Voltage: 5.5V<br>Capacitance: 0.47F<br>Temperature: -25 to +85°C",
-    "image": "logo.jpg",
+    "image": "dclt.gif",
     "datasheet": "",
     "category": "DC SERIES"
   },
   {
     "name": "DCLT5R5684",
     "description": "Voltage: 5.5V<br>Capacitance: 0.68F<br>Temperature: -25 to +85°C",
-    "image": "logo.jpg",
+    "image": "dclt.gif",
     "datasheet": "",
     "category": "DC SERIES"
   },
   {
     "name": "DCLT5R5105",
     "description": "Voltage: 5.5V<br>Capacitance: 1.0F<br>Temperature: -25 to +85°C",
-    "image": "logo.jpg",
+    "image": "dclt.gif",
     "datasheet": "",
     "category": "DC SERIES"
   },
@@ -282,7 +282,7 @@
   {
     "name": "DMS3R3224RF",
     "description": "Voltage: 3.3V<br>Capacitance: 0.22F<br>Temperature: -10 to +60°C",
-    "image": "logo.jpg",
+    "image": "dms-rf.gif",
     "datasheet": "",
     "category": "DMS SERIES"
   },
