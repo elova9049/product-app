@@ -2,116 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Korchip Product Hub</title>
+  <title>Korchip Product App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/10656/SFProDisplay-Regular.woff') format('woff');
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       margin: 0;
-      padding: 40px 20px;
+      padding: 0;
       background-color: #f5f7fa;
       color: #333;
     }
 
     header {
-      text-align: center;
-      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 40px;
     }
 
     header img {
-      height: 60px;
-      margin-bottom: 20px;
+      height: 40px;
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 32px;
       margin-bottom: 10px;
     }
 
-    .tagline {
-      color: #777;
-      font-size: 16px;
+    p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 40px;
     }
 
-    .keywords {
-      text-align: center;
-      font-size: 14px;
-      margin-top: 10px;
-      color: #999;
-    }
-
-    .feature-grid {
+    .menu-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 30px;
-      justify-items: center;
-      margin-top: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
-    .feature-item {
+    .menu-grid a {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
-      background-color: #f8f9fb;
-      border-radius: 16px;
-      height: 160px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      transition: all 0.2s ease;
-      text-align: center;
       justify-content: center;
+      padding: 24px;
+      background: white;
+      border-radius: 16px;
       text-decoration: none;
-      color: inherit;
+      color: #007BFF;
+      font-size: 16px;
+      height: 180px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: all 0.2s ease;
     }
 
-    .feature-item:hover {
-      background-color: #e9f2ff;
+    .menu-grid a:hover {
+      background-color: #f0f8ff;
+      transform: translateY(-3px);
     }
 
-    .feature-item i {
-      font-size: 40px;
+    .menu-grid a i {
+      font-size: 36px;
       margin-bottom: 10px;
     }
 
-    .feature-item span {
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1.4;
-    }
-
     footer {
-      text-align: center;
       margin-top: 60px;
+      text-align: center;
       font-size: 14px;
-      color: #aaa;
+      color: #999;
+      padding-bottom: 40px;
     }
   </style>
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
+
   <header>
+    <div></div>
     <img src="logo.jpg" alt="Korchip Logo" />
-    <h1>Korchip Product Hub</h1>
-    <div class="tagline">Explore our Capacitor Technologies</div>
-    <div class="keywords">Supercapacitor · Lithium-ion Battery · Support</div>
   </header>
 
-  <div class="feature-grid">
-    <a href="products.html" class="feature-item">
-      <i>📦</i>
-      <span>Product List</span>
-    </a>
-    <a href="calculators.html" class="feature-item">
-      <i>🧮</i>
-      <span>Capacitor Calculators</span>
-    </a>
-    <a href="contact.html" class="feature-item">
-      <i>✉️</i>
-      <span>Contact Us</span>
-    </a>
-  </div>
+  <main>
+    <h1>Welcome to Korchip</h1>
+    <p>Supercapacitors · Lithium Batteries · Support</p>
+
+    <div class="menu-grid">
+      <a href="products.html">
+        <i class="fas fa-cubes"></i>
+        Product List
+      </a>
+      <a href="calculators.html">
+        <i class="fas fa-calculator"></i>
+        Capacitor Calculators
+      </a>
+      <a href="contact.html">
+        <i class="fas fa-envelope"></i>
+        Contact Us
+      </a>
+    </div>
+  </main>
 
   <footer>
-    © 2025 Korchip Co., Ltd. All rights reserved.
+    &copy; 2024 Korchip Corp. All rights reserved.
   </footer>
+
 </body>
 </html>
