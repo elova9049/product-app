@@ -70,7 +70,7 @@
     #product-list {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
+      gap: 12px;
       justify-items: center;
     }
 
@@ -195,7 +195,7 @@
                              (product.description || '').toLowerCase().includes(keyword);
         return matchCategory && matchKeyword;
       })
-      .sort((a, b) => (b.new === true ? 1 : 0) - (a.new === true ? 1 : 0)); // New first
+      .sort((a, b) => (b.new === true) - (a.new === true)); // NEW 항목 먼저
 
     renderProducts(filtered);
   }
