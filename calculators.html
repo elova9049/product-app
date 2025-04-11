@@ -1,120 +1,161 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Capacitor Calculators</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculators | Korchip</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background-color: #ffffff;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      color: #333;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      margin: 0;
+      color: #111;
     }
 
-    img {
-      height: 60px;
-      margin-bottom: 30px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 40px;
+      background-color: #fff;
+      border-bottom: 1px solid #eee;
+    }
+
+    header img {
+      height: 36px;
+    }
+
+    nav a {
+      margin-left: 32px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      color: #007BFF;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     h1 {
+      font-size: 28px;
       text-align: center;
-      margin-bottom: 30px;
-      color: #333;
+      margin-bottom: 12px;
     }
 
-    .menu {
+    .subtitle {
       text-align: center;
-      margin-bottom: 30px;
+      color: #666;
+      margin-bottom: 40px;
     }
 
-    .menu a {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px 10px;
-      background-color: #007BFF;
-      color: white;
-      border-radius: 8px;
+    .calculator-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .calculator-card {
+      background-color: #f9f9f9;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .calculator-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .calculator-card a {
       text-decoration: none;
-      font-size: 16px;
-    }
-
-    .menu a:hover {
-      background-color: #0056b3;
-    }
-
-    .list a {
+      color: inherit;
       display: block;
-      padding: 14px;
-      margin-bottom: 10px;
-      background-color: #f5f7fa;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      color: #007BFF;
-      text-decoration: none;
-      font-size: 16px;
     }
 
-    .list a:hover {
-      background-color: #eaf2ff;
+    .calculator-card .icon {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .calculator-card h2 {
+      font-size: 18px;
+      color: #007BFF;
+      margin-bottom: 8px;
+    }
+
+    .calculator-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 40px 0 60px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
-<div class="nav">
-  <a href="index.html">🏠 Home</a>
-  <a href="products.html">📦 Products</a>
-  <a href="calculators.html">🧮 Calculators</a>
-</div>
-<style>
-  .nav {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .nav a {
-    display: inline-block;
-    margin: 0 12px;
-    padding: 8px 16px;
-    text-decoration: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 6px;
-    font-size: 15px;
-  }
-  .nav a:hover {
-    background-color: #0056b3;
-  }
-</style>
+  <header>
+    <img src="logo.jpg" alt="Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="calculators.html">Calculators</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
+  <main>
+    <h1>Capacitor Calculators</h1>
+    <p class="subtitle">Choose a tool to calculate your capacitor needs</p>
 
-<div style="position:absolute; top:20px; right:20px; z-index: 100;">
-  <img src="logo.jpg" alt="Logo" style="height: 30px;">
-</div>
+    <div class="calculator-grid">
+      <div class="calculator-card">
+        <a href="calculator-capacity.html">
+          <div class="icon">🔋</div>
+          <h2>Capacitance Calculator</h2>
+          <p>Calculate required capacitance based on discharge specs</p>
+        </a>
+      </div>
+      <div class="calculator-card">
+        <a href="calculator-discharge.html">
+          <div class="icon">⏱️</div>
+          <h2>Discharge Time Calculator</h2>
+          <p>Estimate how long a capacitor can power your circuit</p>
+        </a>
+      </div>
+      <div class="calculator-card">
+        <a href="calculator-charge.html">
+          <div class="icon">⚡</div>
+          <h2>Charge Time Calculator</h2>
+          <p>Determine charging time using R and C values</p>
+        </a>
+      </div>
+      <div class="calculator-card">
+        <a href="calculator-life.html">
+          <div class="icon">📈</div>
+          <h2>Life Expectancy Estimator</h2>
+          <p>Estimate capacitor lifetime based on temperature & specs</p>
+        </a>
+      </div>
+    </div>
+  </main>
 
-
-
-
-
-
-
-  <h1>🔧 Capacitor Calculators</h1>
-  <div class="list">
-    <a href="calculator-capacity.html">🔋 Capacitance Calculator</a>
-    <a href="calculator-charge.html">⏱️ Charge Time Calculator</a>
-    <a href="calculator-discharge.html">🔄 Discharge Time Calculator</a>
-    <a href="calculator-life.html">⏳ Life Expectancy Calculator</a>
-  </div>
-
-<footer style="text-align:center; padding: 20px; font-size: 14px; color: #888;">
-  <p>&copy; 2025 Elova Corp. All rights reserved.</p>
-  
-</footer>
+  <footer>
+    &copy; 2025 Korchip Corp. All rights reserved.
+  </footer>
 
 </body>
 </html>
