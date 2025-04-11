@@ -36,25 +36,34 @@
       margin-bottom: 20px;
     }
 
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
     label {
       display: block;
       margin: 12px 0 6px;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     input {
       width: 100%;
-      max-width: 400px;
       padding: 10px;
       font-size: 14px;
+      margin-bottom: 12px;
       border: 1px solid #ccc;
       border-radius: 6px;
       box-sizing: border-box;
-      margin-bottom: 15px;
     }
 
     button {
-      padding: 10px 20px;
+      width: 100%;
+      padding: 12px;
       font-size: 16px;
       background-color: #007BFF;
       color: white;
@@ -69,93 +78,95 @@
 
     #result {
       margin-top: 20px;
-      font-size: 18px;
-      color: #333;
-    }
-
-    #formula {
-      margin-top: 40px;
-      font-size: 15px;
-      text-align: center;
-      color: #666;
+      font-size: 16px;
       line-height: 1.6;
     }
 
-    main {
-      max-width: 600px;
-      margin: 0 auto;
+    .formula-box {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #333;
+      background-color: #eef4ff;
+      padding: 14px 18px;
+      border-left: 4px solid #007BFF;
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .formula-box code {
+      display: block;
+      margin-top: 6px;
+      font-family: monospace;
+      font-size: 15px;
+      color: #000;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="calculators.html">Calculators</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <img src="logo.jpg" alt="Logo" />
-  </header>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="calculators.html">Calculators</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <img src="logo.jpg" alt="Logo">
+</header>
 
-  <main>
-    <h1>🔋 Capacitance Calculator</h1>
+<h1>🔋 Capacitance Calculator</h1>
 
-    <label for="current">Discharge Current (mA):</label>
-    <input type="number" id="current" placeholder="e.g. 20" />
+<div class="container">
+  <label for="current">Discharge Current (mA):</label>
+  <input type="number" id="current" />
 
-    <label for="time">Operation Time (s):</label>
-    <input type="number" id="time" placeholder="e.g. 10" />
+  <label for="time">Operation Time (s):</label>
+  <input type="number" id="time" />
 
-    <label for="v1">Max Voltage (V):</label>
-    <input type="number" id="v1" placeholder="e.g. 5.5" />
+  <label for="v1">Max Voltage (V):</label>
+  <input type="number" id="v1" />
 
-    <label for="v2">Min Voltage (V):</label>
-    <input type="number" id="v2" placeholder="e.g. 2.5" />
+  <label for="v2">Min Voltage (V):</label>
+  <input type="number" id="v2" />
 
-    <button onclick="calculate()">Calculate</button>
+  <button onclick="calculate()">Calculate</button>
 
-    <div id="result"></div>
+  <div id="result"></div>
 
-    <div id="formula">
-      <strong>Formula:</strong><br>
-      C = (I × t) / (V<sub>max</sub> - V<sub>min</sub>)<br>
-      where:<br>
-      - C: Capacitance (F)<br>
-      - I: Discharge Current (A)<br>
-      - t: Time (s)<br>
-      - V<sub>max</sub>, V<sub>min</sub>: Voltage Range (V)
-    </div>
-  </main>
+  <div class="formula-box">
+    <strong>Calculation Formula:</strong>
+    <code>C = (I × t) / (V₁ - V₂)</code>
+    <div style="margin-top: 5px;">I: current (A), t: time (s), V₁ > V₂</div>
+  </div>
+</div>
 
-  <script>
-    function calculate() {
-      const I = parseFloat(document.getElementById('current').value) / 1000;
-      const t = parseFloat(document.getElementById('time').value);
-      const V1 = parseFloat(document.getElementById('v1').value);
-      const V2 = parseFloat(document.getElementById('v2').value);
+<script>
+  function calculate() {
+    const I = parseFloat(document.getElementById('current').value) / 1000;
+    const t = parseFloat(document.getElementById('time').value);
+    const V1 = parseFloat(document.getElementById('v1').value);
+    const V2 = parseFloat(document.getElementById('v2').value);
 
-      if (isNaN(I) || isNaN(t) || isNaN(V1) || isNaN(V2)) {
-        document.getElementById('result').innerHTML = "⚠️ Please fill in all fields correctly.";
-        return;
-      }
-
-      if (V1 <= V2) {
-        document.getElementById('result').innerHTML = "⚠️ Max Voltage must be greater than Min Voltage.";
-        return;
-      }
-
-      const C = (I * t) / (V1 - V2);
-      const C_mF = C * 1000;
-      const C_rec = C_mF * 1.3;
-
-      document.getElementById('result').innerHTML = `
-        ✔️ Minimum Required Capacitance: <strong>${C_mF.toFixed(2)} mF</strong><br>
-        💡 Recommended Capacitance (with 30% margin): <strong>${C_rec.toFixed(2)} mF</strong>
-      `;
+    if (isNaN(I) || isNaN(t) || isNaN(V1) || isNaN(V2)) {
+      document.getElementById('result').innerHTML = "⚠️ Please enter all values correctly.";
+      return;
     }
-  </script>
+
+    if (V1 <= V2) {
+      document.getElementById('result').innerHTML = "⚠️ Max Voltage (V₁) must be greater than Min Voltage (V₂).";
+      return;
+    }
+
+    const C = (I * t) / (V1 - V2);
+    const C_mF = C * 1000;
+    const C_rec = C_mF * 1.3;
+
+    document.getElementById('result').innerHTML = `
+      ✅ Minimum Capacitance Required: <strong>${C_mF.toFixed(2)} mF</strong><br>
+      💡 Recommended Capacitance (+30%): <strong>${C_rec.toFixed(2)} mF</strong>
+    `;
+  }
+</script>
 
 </body>
 </html>
