@@ -44,35 +44,35 @@
   {
     "name": "DCS5R5473",
     "description": "Voltage: 5.5V<br>Capacitance: 0.047F<br>Temperature: -25 to +70°C",
-    "image": "logo.jpg",
+    "image": "dcs.gif",
     "datasheet": "",
     "category": "DC SERIES"
   },
   {
     "name": "DCS5R5104",
     "description": "Voltage: 5.5V<br>Capacitance: 0.1F<br>Temperature: -25 to +70°C",
-    "image": "logo.jpg",
+    "image": "dcs.gif",
     "datasheet": "",
     "category": "DC SERIES"
   },
   {
     "name": "DCS5R5224",
     "description": "Voltage: 5.5V<br>Capacitance: 0.22F<br>Temperature: -25 to +70°C",
-    "image": "logo.jpg",
+    "image": "dcs.gif",
     "datasheet": "",
     "category": "DC SERIES"
   },
   {
     "name": "DCS5R5334",
     "description": "Voltage: 5.5V<br>Capacitance: 0.33F<br>Temperature: -25 to +70°C",
-    "image": "logo.jpg",
+    "image": "dcs.gif",
     "datasheet": "",
     "category": "DC SERIES"
   },
   {
     "name": "DCS5R5474",
     "description": "Voltage: 5.5V<br>Capacitance: 0.47F<br>Temperature: -25 to +70°C",
-    "image": "logo.jpg",
+    "image": "dcs.gif",
     "datasheet": "",
     "category": "DC SERIES"
   },
@@ -191,14 +191,14 @@
   {
     "name": "DCL5R5105",
     "description": "Voltage: 5.5V<br>Capacitance: 1.0F<br>Temperature: -25 to +70°C",
-    "image": "logo.jpg",
+    "image": "dcl.gif",
     "datasheet": "",
     "category": "DC SERIES"
   },
   {
     "name": "DCL5R5155",
     "description": "Voltage: 5.5V<br>Capacitance: 1.5F<br>Temperature: -25 to +70°C",
-    "image": "logo.jpg",
+    "image": "dcl.gif",
     "datasheet": "",
     "category": "DC SERIES"
   },
