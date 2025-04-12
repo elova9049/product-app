@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Korchip | Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- 헤더 불러오기 -->
+  <!-- 공통 헤더 -->
   <div id="header-placeholder"></div>
 
-  <!-- 히어로 섹션 -->
+  <!-- 메인 콘텐츠 -->
   <section class="hero">
     <h1>Powering the Future</h1>
     <p>Advanced Supercapacitors and Lithium Rechargeable Solutions</p>
@@ -25,7 +25,6 @@
     </div>
   </section>
 
-  <!-- 메뉴 카드 섹션 -->
   <section class="menu">
     <div class="card">
       <a href="products.html">
@@ -50,19 +49,20 @@
     </div>
   </section>
 
-  <!-- 푸터 불러오기 -->
+  <!-- 공통 푸터 -->
   <div id="footer-placeholder"></div>
 
-  <!-- 공통 header/footer 불러오기 -->
+  <!-- 헤더 & 푸터 불러오기 -->
   <script>
     fetch('header.html')
       .then(res => res.text())
-      .then(data => document.getElementById('header-placeholder').innerHTML = data);
+      .then(data => document.getElementById('header-placeholder').innerHTML = data)
+      .catch(err => console.error('Header load error:', err));
 
     fetch('footer.html')
       .then(res => res.text())
-      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+      .catch(err => console.error('Footer load error:', err));
   </script>
-
 </body>
 </html>
