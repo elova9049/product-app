@@ -115,7 +115,28 @@ nav a:hover::after {
   color: inherit;
   display: block;
 }
+.product {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  padding: 16px;
+  text-align: left;
+  position: relative;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
 
+.product:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.product a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
 /* 푸터 */
 footer {
   text-align: center;
@@ -123,4 +144,3 @@ footer {
   font-size: 13px;
   color: #aaa;
 }
-
