@@ -8,11 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     .calculator-section {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 60px auto;
       padding: 0 20px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
       gap: 40px;
     }
 
@@ -25,8 +25,16 @@
 
     .calculator h2 {
       font-size: 20px;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       text-align: center;
+    }
+
+    .calculator p.formula {
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+      margin-bottom: 16px;
+      line-height: 1.4;
     }
 
     .form-group {
@@ -76,12 +84,17 @@
     <!-- RC Discharge Calculator -->
     <div class="calculator">
       <h2>RC Discharge Method</h2>
+      <p class="formula">
+        Formula: <br>
+        <code>C = -t / (R × ln(V / V₀))</code><br>
+        Use this to calculate capacitance based on discharge time.
+      </p>
       <div class="form-group">
         <label for="v0">Initial Voltage V₀ (V)</label>
         <input type="number" id="v0" step="any">
       </div>
       <div class="form-group">
-        <label for="v">Minimum Voltage V (V)</label>
+        <label for="v">Final Voltage V (V)</label>
         <input type="number" id="v" step="any">
       </div>
       <div class="form-group">
@@ -89,16 +102,21 @@
         <input type="number" id="t" step="any">
       </div>
       <div class="form-group">
-        <label for="r">Resistance R (Ohms)</label>
+        <label for="r">Resistance R (Ω)</label>
         <input type="number" id="r" step="any">
       </div>
       <button class="btn" onclick="calculateRC()">Calculate</button>
       <div class="result" id="rc-result"></div>
     </div>
 
-    <!-- Constant Current Calculator -->
+    <!-- Current Load Calculator -->
     <div class="calculator">
-      <h2>Constant Current Method</h2>
+      <h2>Current Load Method</h2>
+      <p class="formula">
+        Formula: <br>
+        <code>C = (I × t) / ΔV</code><br>
+        Use this when you know the load current and allowed voltage drop.
+      </p>
       <div class="form-group">
         <label for="i">Current I (A)</label>
         <input type="number" id="i" step="any">
@@ -135,7 +153,7 @@
       const output = document.getElementById('rc-result');
 
       if (isNaN(V0) || isNaN(V) || isNaN(t) || isNaN(R) || V0 <= 0 || V <= 0 || R <= 0 || V >= V0) {
-        output.textContent = "Please enter valid values (V must be less than V₀, R > 0).";
+        output.textContent = "Please enter valid values (V < V₀, R > 0).";
         return;
       }
 
@@ -150,7 +168,7 @@
       const output = document.getElementById('current-result');
 
       if (isNaN(I) || isNaN(t) || isNaN(dV) || dV <= 0) {
-        output.textContent = "Please enter valid values (ΔV must be greater than 0).";
+        output.textContent = "Please enter valid values (ΔV > 0).";
         return;
       }
 
