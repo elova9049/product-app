@@ -1,164 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Product Detail</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    .product-detail {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .product-header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
       padding: 40px;
-      max-width: 800px;
-      margin: auto;
+    }
+
+    .product-header img {
+      flex: 1 1 300px;
+      max-width: 300px;
+      object-fit: contain;
+      border-radius: 12px;
       background-color: #f9f9f9;
     }
 
-    h1 { font-size: 28px; color: #333; }
-
-    img { max-width: 100%; margin: 20px 0; border-radius: 12px; }
-
-    p { font-size: 16px; color: #555; }
-
-    #lang-switch {
-      text-align: right;
-      margin-bottom: 20px;
+    .product-info {
+      flex: 1 1 300px;
     }
 
-    .back {
-      margin-top: 30px;
+    .product-info h1 {
+      font-size: 28px;
+      margin-bottom: 12px;
     }
 
-    .back a {
+    .badge {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 8px;
+      margin-left: 10px;
+    }
+
+    .product-info p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .product-specs {
+      padding: 0 40px 40px;
+    }
+
+    .product-specs h2 {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    .product-specs ul {
+      list-style: disc;
+      padding-left: 20px;
+      color: #444;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 30px auto 60px;
+      text-align: center;
       color: #007BFF;
       text-decoration: none;
+      font-weight: 500;
     }
 
-    #download-button {
-      margin-top: 20px;
-      text-align: center;
+    @media (max-width: 600px) {
+      .product-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .product-header img {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
-<div style="position:absolute; top:20px; right:20px; z-index: 100;">
-  <img src="logo.jpg" alt="Logo" style="height: 30px;">
-</div>
+  <div id="header-placeholder"></div>
 
+  <main class="product-detail">
+    <div class="product-header">
+      <img id="product-image" src="" alt="Product Image">
+      <div class="product-info">
+        <h1 id="product-name">Product Name <span id="badge"></span></h1>
+        <p id="product-description">Description will go here.</p>
+      </div>
+    </div>
 
+    <div class="product-specs">
+      <h2>Specifications</h2>
+      <ul id="product-specs-list">
+        <!-- Specs rendered here -->
+      </ul>
+    </div>
 
+    <a class="back-btn" href="products.html">&larr; Back to Product List</a>
+  </main>
 
-
-<div class="nav">
-  <a href="index.html">🏠 Home</a>
-  <a href="products.html">📦 Products</a>
-  <a href="calculators.html">🧮 Calculators</a>
-</div>
-<style>
-  .nav {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .nav a {
-    display: inline-block;
-    margin: 0 12px;
-    padding: 8px 16px;
-    text-decoration: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 6px;
-    font-size: 15px;
-  }
-  .nav a:hover {
-    background-color: #0056b3;
-  }
-</style>
-
-  
-
-  <h1 id="name"></h1>
-  <img id="image" src="" alt="Product Image">
-  <p id="description"></p>
-  <div id="download-button"></div>
-
-  
+  <div id="footer-placeholder"></div>
 
   <script>
+    // Load header and footer
+    fetch('header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('header-placeholder').innerHTML = html);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('footer-placeholder').innerHTML = html);
+
+    // Load product data
     const params = new URLSearchParams(window.location.search);
-    const productName = params.get('name');
+    const name = params.get('name');
 
-    const translations = {
-      ko: {
-        back: "← ← Back to list",
-        download: "📄 Download Datasheet",
-        notFound: "Product not found."
-      },
-      en: {
-        back: "← Back to list",
-        download: "📄 Download Datasheet",
-        notFound: "Product not found."
-      }
-    };
-
-    let currentLang = 'ko';
-    let currentProduct = null;
-
-    function setLanguage(lang) {
-      currentLang = lang;
-
-      // 뒤로가기 텍스트 업데이트
-      document.getElementById('back-link').textContent = translations[lang].back;
-
-      // 다운로드 버튼 다시 그리기
-      updateDownloadButton();
-
-      // 제품 못 찾았을 때 메시지도 번역
-      if (!currentProduct) {
-        document.body.innerHTML = `<p>${translations[lang].notFound}</p>`;
-      }
-    }
-
-    function updateDownloadButton() {
-      const container = document.getElementById('download-button');
-      container.innerHTML = '';
-
-      if (currentProduct && currentProduct.datasheet) {
-        const btn = document.createElement('a');
-        btn.href = currentProduct.datasheet;
-        btn.textContent = translations[currentLang].download;
-        btn.style.display = 'inline-block';
-        btn.style.marginTop = '20px';
-        btn.style.padding = '10px 20px';
-        btn.style.backgroundColor = '#007BFF';
-        btn.style.color = 'white';
-        btn.style.borderRadius = '8px';
-        btn.style.textDecoration = 'none';
-
-        container.appendChild(btn);
-      }
-    }
-
-    fetch('products.json')
-      .then(response => response.json())
+    fetch('products.json')  // 또는 products_with_specs.json
+      .then(res => res.json())
       .then(products => {
-        const product = products.find(p => p.name === productName);
-        currentProduct = product;
-
-        if (product) {
-          document.getElementById('name').textContent = product.name;
-          document.getElementById('image').src = product.image;
-          document.getElementById('description').textContent = product.description;
-
-          setLanguage(currentLang); // 초기 언어 설정
-        } else {
-          document.body.innerHTML = `<p>${translations[currentLang].notFound}</p>`;
+        const product = products.find(p => p.name === name);
+        if (!product) {
+          document.body.innerHTML = "<p style='text-align:center; margin-top:80px;'>Product not found.</p>";
+          return;
         }
+
+        document.getElementById('product-name').textContent = product.name;
+        if (product.new) {
+          const badge = document.createElement('span');
+          badge.className = 'badge';
+          badge.textContent = 'NEW';
+          document.getElementById('product-name').appendChild(badge);
+        }
+
+        document.getElementById('product-image').src = product.image;
+        document.getElementById('product-description').innerHTML = product.description || "No description.";
+
+        const list = document.getElementById('product-specs-list');
+        (product.specs || []).forEach(spec => {
+          const li = document.createElement('li');
+          li.textContent = spec;
+          list.appendChild(li);
+        });
       });
   </script>
-
-<footer style="text-align:center; padding: 20px; font-size: 14px; color: #888;">
-  <p>&copy; 2025 Elova Corp. All rights reserved.</p>
-  
-</footer>
 
 </body>
 </html>
