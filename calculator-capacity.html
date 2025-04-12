@@ -158,7 +158,8 @@
       }
 
       const C = -t / (R * Math.log(V / V0));
-      output.textContent = `Required Capacitance: ${C.toFixed(6)} F`;
+      const mAh = (C * V) / 7.2;
+      output.innerHTML = `Required Capacitance: ${C.toFixed(6)} F<br>Approx. Capacity: ${mAh.toFixed(3)} mAh`;
     }
 
     function calculateCurrent() {
@@ -173,7 +174,9 @@
       }
 
       const C = (I * t) / dV;
-      output.textContent = `Required Capacitance: ${C.toFixed(6)} F`;
+      const avgV = dV / 2; // assuming voltage drops linearly from V to 0
+      const mAh = (C * avgV) / 7.2;
+      output.innerHTML = `Required Capacitance: ${C.toFixed(6)} F<br>Approx. Capacity: ${mAh.toFixed(3)} mAh`;
     }
   </script>
 </body>
