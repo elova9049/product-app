@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Calculators | Korchip</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,32 +12,46 @@
   <!-- 공통 헤더 -->
   <div id="header-placeholder"></div>
 
-  <!-- 계산기 본문 -->
-  <main style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
-    <h1 style="text-align: center; font-size: 28px; margin-bottom: 12px;">Capacitor Calculator</h1>
-    <p class="subtitle" style="text-align: center; margin-bottom: 32px;">
-      Use the calculator below to estimate energy or capacitance values.
-    </p>
+  <!-- 본문 -->
+  <main style="max-width: 1000px; margin: 40px auto 80px; padding: 0 20px;">
+    <h1 style="text-align: center; font-size: 32px; font-weight: 600; margin-bottom: 40px;">Capacitor Calculators</h1>
 
-    <section style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-      <label for="voltage" style="display: block; margin-bottom: 10px;">Voltage (V):</label>
-      <input type="number" id="voltage" placeholder="Enter voltage" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;">
-
-      <label for="capacitance" style="display: block; margin-bottom: 10px;">Capacitance (F):</label>
-      <input type="number" id="capacitance" placeholder="Enter capacitance" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;">
-
-      <button onclick="calculateEnergy()" style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 6px; cursor: pointer;">
-        Calculate Energy (E = ½CV²)
-      </button>
-
-      <p id="result" style="margin-top: 20px; font-weight: 500;"></p>
+    <section class="menu">
+      <div class="card">
+        <a href="calculator-capacity.html">
+          <div class="card-icon">🔋</div>
+          <div class="card-title">Capacitance</div>
+          <p>Calculate the required capacitance</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="calculator-charge.html">
+          <div class="card-icon">⏱️</div>
+          <div class="card-title">Charge Time</div>
+          <p>Estimate time to charge a capacitor</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="calculator-discharge.html">
+          <div class="card-icon">🔄</div>
+          <div class="card-title">Discharge Time</div>
+          <p>Estimate capacitor discharge duration</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="calculator-life.html">
+          <div class="card-icon">📉</div>
+          <div class="card-title">Life Expectancy</div>
+          <p>Estimate capacitor operational lifespan</p>
+        </a>
+      </div>
     </section>
   </main>
 
   <!-- 공통 푸터 -->
   <div id="footer-placeholder"></div>
 
-  <!-- 공통 헤더/푸터 불러오기 -->
+  <!-- 헤더/푸터 불러오기 -->
   <script>
     fetch('header.html')
       .then(res => res.text())
@@ -46,22 +60,6 @@
     fetch('footer.html')
       .then(res => res.text())
       .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-  </script>
-
-  <!-- 계산기 기능 -->
-  <script>
-    function calculateEnergy() {
-      const voltage = parseFloat(document.getElementById('voltage').value);
-      const capacitance = parseFloat(document.getElementById('capacitance').value);
-
-      if (isNaN(voltage) || isNaN(capacitance)) {
-        document.getElementById('result').textContent = "Please enter valid numbers for both fields.";
-        return;
-      }
-
-      const energy = 0.5 * capacitance * Math.pow(voltage, 2);
-      document.getElementById('result').textContent = `Stored Energy: ${energy.toFixed(4)} joules`;
-    }
   </script>
 
 </body>
